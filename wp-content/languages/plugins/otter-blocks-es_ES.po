@@ -1,0 +1,2988 @@
+# Translation of Plugins - Otter Blocks &#8211; Gutenberg Blocks, Page Builder for Gutenberg Editor &amp; FSE - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Otter Blocks &#8211; Gutenberg Blocks, Page Builder for Gutenberg Editor &amp; FSE - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-09-07 17:46:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.1.0\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Otter Blocks &#8211; Gutenberg Blocks, Page Builder for Gutenberg Editor &amp; FSE - Stable (latest release)\n"
+
+#: inc/plugins/class-form-records-export.php:129
+msgid "Status"
+msgstr "Estado"
+
+#: inc/plugins/class-dashboard.php:751
+msgid "Export as CSV"
+msgstr "Exportar como CSV"
+
+#: inc/plugins/class-dashboard.php:750
+msgid "Export as WordPress XML (WXR)"
+msgstr "Exportar como XML de WordPress (WXR)"
+
+#: inc/plugins/class-dashboard.php:745
+msgid "Choose file format"
+msgstr "Elegir formato de archivo"
+
+#: build/blocks/form-captcha/block.json
+msgctxt "block keyword"
+msgid "turnstile"
+msgstr "turnstile"
+
+#: build/blocks/form-captcha/block.json
+msgctxt "block keyword"
+msgid "recaptcha"
+msgstr "recaptcha"
+
+#: build/blocks/form-captcha/block.json
+msgctxt "block keyword"
+msgid "captcha"
+msgstr "captcha"
+
+#: build/blocks/form-captcha/block.json
+msgctxt "block description"
+msgid "Protect the form from spam with a captcha challenge. Powered by Otter."
+msgstr "Protege el formulario contra el spam con un desafío captcha. Desarrollado por Otter."
+
+#: build/blocks/form-captcha/block.json
+msgctxt "block title"
+msgid "Captcha"
+msgstr "Captcha"
+
+#: build/blocks/content-slider/block.json
+msgctxt "block description"
+msgid "A lightweight slider where each inner block becomes a slide. Powered by Otter."
+msgstr "Un carrusel ligero donde cada bloque interno se convierte en una diapositiva. Desarrollado por Otter."
+
+#: build/blocks/content-slider/block.json
+msgctxt "block title"
+msgid "Content Slider"
+msgstr "Carrusel de contenidos"
+
+#: build/blocks/content-generator/block.json
+msgctxt "block title"
+msgid "AI Block"
+msgstr "Bloque IA"
+
+#: inc/patterns/timeline-horizontal.php:11
+msgid "Horizontal numbered process timeline in a four-column grid showing steps from discovery to launch, ideal for how-it-works, roadmaps, and workflow stages"
+msgstr "Línea de tiempo horizontal numerada en una cuadrícula de cuatro columnas que muestra pasos desde el descubrimiento hasta el lanzamiento, ideal para explicar cómo funciona, hojas de ruta y etapas de trabajo"
+
+#: inc/patterns/timeline-horizontal.php:9
+msgid "Horizontal Timeline"
+msgstr "Línea de tiempo horizontal"
+
+#: inc/patterns/text-two-column-prose.php:11
+msgid "Editorial two-column prose section with a heading, intro, and side-by-side body text, great for our-story, about-us narrative, and long-form content blocks"
+msgstr "Sección editorial de texto en dos columnas con encabezado, introducción y cuerpo de texto lado a lado, perfecta para historias de la empresa, narraciones «Sobre nosotros» y bloques de contenido largo"
+
+#: inc/patterns/text-two-column-prose.php:9
+msgid "Text Two Column Prose"
+msgstr "Texto en prosa de dos columnas"
+
+#: inc/patterns/text-lead-statement.php:11
+msgid "Dark centered mission statement section with a large lead paragraph and author byline, ideal for company values, brand manifesto, or about-us intro copy"
+msgstr "Sección oscura centrada para declaración de misión con párrafo destacado grande y firma de autor, ideal para valores de la empresa, manifiesto de marca o introducción «Sobre nosotros»"
+
+#: inc/patterns/text-lead-statement.php:9
+msgid "Text Lead Statement"
+msgstr "Texto de declaración destacada"
+
+#: inc/patterns/team-spotlight-lead.php:11
+msgid "Team section featuring a founder spotlight split layout above a three-column team grid with photos, roles, and social icons for about pages and leadership bios"
+msgstr "Sección del equipo con diseño dividido destacado del fundador sobre una cuadrícula del equipo de tres columnas con fotos, cargos e iconos sociales para páginas «Sobre nosotros» y biografías del liderazgo"
+
+#: inc/patterns/team-spotlight-lead.php:9
+msgid "Team Spotlight Lead"
+msgstr "Destacado principal del equipo"
+
+#: inc/patterns/team-cards.php:11
+msgid "Centered three-column team grid of member cards with rounded portraits, names, roles, and bios, for about page staff, founders, and meet the team."
+msgstr "Cuadrícula centrada de tres columnas con tarjetas de miembros del equipo con retratos redondeados, nombres, cargos y biografías, para el equipo de la página «Sobre nosotros», fundadores y conocer al equipo."
+
+#: inc/patterns/team-cards.php:9
+msgid "Team Cards"
+msgstr "Tarjetas del equipo"
+
+#: inc/patterns/stats-row.php:11
+msgid "Centered four-column stats bar with big number counters and labels, for key metrics, company numbers, achievements, and social proof figures."
+msgstr "Barra centrada de estadísticas de cuatro columnas con grandes contadores numéricos y etiquetas, para métricas clave, números de la empresa, logros y cifras de prueba social."
+
+#: inc/patterns/stats-row.php:9
+msgid "Stats Row"
+msgstr "Fila de estadísticas"
+
+#: inc/patterns/pricing-compare-simple.php:11
+msgid "Minimal three-column pricing comparison with bordered cards, a raised gradient most-popular tier, checkmark feature lists, and CTAs, for subscription plans."
+msgstr "Comparativa sencilla de precios de tres columnas con tarjetas con borde, nivel «más popular» elevado con degradado, listas de características con marcas de verificación y llamadas a la acción, para planes de suscripción."
+
+#: inc/patterns/pricing-compare-simple.php:9
+msgid "Simple Pricing Comparison"
+msgstr "Comparativa sencilla de precios"
+
+#: inc/patterns/pricing-columns.php:11
+msgid "Three-column pricing table with a highlighted most-popular plan, monthly prices, checkmark feature lists, and CTA buttons, for subscription plans and tiers."
+msgstr "Tabla de precios de tres columnas con plan «más popular» destacado, precios mensuales, listas de características con marcas de verificación y botones de llamada a la acción, para planes de suscripción y niveles."
+
+#: inc/patterns/pricing-columns.php:9
+msgid "Pricing Columns"
+msgstr "Columnas de precios"
+
+#: inc/patterns/portfolio-overlay-grid.php:11
+msgid "Dark three-column portfolio grid of project cards with hover gradient overlays, category tags, and arrow icons, for case studies, agency work, and showcase."
+msgstr "Cuadrícula oscura de tres columnas para portafolios con tarjetas de proyectos, superposiciones de degradado al pasar el cursor, etiquetas de categoría e iconos de flechas, para casos de estudio, trabajos de agencia y muestras."
+
+#: inc/patterns/portfolio-overlay-grid.php:9
+msgid "Portfolio Overlay Grid"
+msgstr "Cuadrícula de portafolio con superposición"
+
+#: inc/patterns/newsletter-signup.php:11
+msgid "Centered newsletter signup on a dark background with headline and email subscribe form, for email list opt-in, weekly digest, and lead capture."
+msgstr "Registro de boletín centrado sobre fondo oscuro con titular y formulario de suscripción por correo, para captación de listas de correo, resumen semanal y captación de clientes."
+
+#: inc/patterns/newsletter-signup.php:9
+msgid "Newsletter Signup"
+msgstr "Registro al boletín"
+
+#: inc/patterns/newsletter-inline-bar.php:11
+msgid "Inline newsletter signup bar in a bordered card with split two-column layout, headline beside an email subscribe field, for email list and weekly digest."
+msgstr "Barra de registro de boletín integrada en una tarjeta con borde con diseño dividido de dos columnas, titular junto al campo de correo, para lista de correo y resumen semanal."
+
+#: inc/patterns/newsletter-inline-bar.php:9
+msgid "Newsletter Inline Bar"
+msgstr "Barra integrada de boletín"
+
+#: inc/patterns/maps-location.php:11
+msgid "Split two-column contact section with address, hours and email icon list beside an embedded interactive location map, for store visit and directions."
+msgstr "Sección de contacto dividida en dos columnas con lista de iconos de dirección, horario y correo junto a un mapa interactivo de ubicación incrustado, para visitas a tiendas e indicaciones."
+
+#: inc/patterns/maps-location.php:9
+msgid "Map And Location Details"
+msgstr "Mapa y detalles de ubicación"
+
+#: inc/patterns/icon-grid-bordered.php:11
+msgid "Bordered three-column icon feature grid of six cells with dividers, listing product features and benefits like onboarding, analytics, security, and support."
+msgstr "Cuadrícula de características con iconos en tres columnas con borde de seis celdas con divisores, que enumera características del producto y beneficios como incorporación, analíticas, seguridad y soporte."
+
+#: inc/patterns/icon-grid-bordered.php:9
+msgid "Bordered Icon Grid"
+msgstr "Cuadrícula de iconos con borde"
+
+#: inc/patterns/icon-feature-trio.php:11
+msgid "Centered three-column icon feature grid with rounded icon badges, headings, and descriptions highlighting speed, security, and support benefits or services."
+msgstr "Cuadrícula centrada de tres columnas para características con iconos con insignias redondeadas, encabezados y descripciones que destacan beneficios o servicios de velocidad, seguridad y soporte."
+
+#: inc/patterns/icon-feature-trio.php:9
+msgid "Icon Feature Trio"
+msgstr "Tío de características con iconos"
+
+#: inc/patterns/gallery-overlay-grid.php:11
+msgid "Dark three-column image gallery grid with hover gradient overlay captions and categories, for photography portfolio, masonry showcase, and visual lookbook."
+msgstr "Cuadrícula oscura de galería de imágenes de tres columnas con leyendas y categorías sobrepuestas en degradado al pasar el cursor, para portafolios de fotografía, galerías tipo mosaico y catálogos visuales."
+
+#: inc/patterns/gallery-overlay-grid.php:9
+msgid "Gallery Overlay Grid"
+msgstr "Cuadrícula de galería con superposición"
+
+#: inc/patterns/gallery-feature-split.php:11
+msgid "Editorial image gallery with one large hero photo split beside a four-tile grid and gradient overlay captions, for photography portfolio and lookbook showcases."
+msgstr "Galería editorial de imágenes con una foto principal grande dividida junto a una cuadrícula de cuatro mosaicos y leyendas superpuestas con degradados, para portafolios de fotografía y galerías visuales."
+
+#: inc/patterns/gallery-feature-split.php:9
+msgid "Gallery Feature Split"
+msgstr "Galería destacada dividida"
+
+#: inc/patterns/form-gradient-split.php:11
+msgid "Split two-column contact form with a gradient info panel showing email, phone and address beside name, email and message fields for inquiries."
+msgstr "Formulario de contacto dividido en dos columnas con un panel de información en degradado que muestra correo, teléfono y dirección junto a campos de nombre, correo y mensaje para consultas."
+
+#: inc/patterns/form-gradient-split.php:9
+msgid "Contact Form with Gradient Panel"
+msgstr "Formulario de contacto con panel en degradado"
+
+#: inc/patterns/form-glow-card.php:11
+msgid "Centered lead capture form on a dark glow gradient background with white card, for early access waitlist, request invite, and signup."
+msgstr "Formulario centrado de captación sobre un fondo de degradado oscuro resplandeciente con tarjeta blanca, para listas de espera de acceso anticipado, solicitudes de invitación y registros."
+
+#: inc/patterns/form-glow-card.php:9
+msgid "Get Access Form on Dark"
+msgstr "Formulario de acceso sobre fondo oscuro"
+
+#: inc/patterns/faq-two-column.php:11
+msgid "FAQ accordion in a split two-column layout with sticky intro and contact link beside collapsible chevron questions, for help center and common answers."
+msgstr "Acordeón de preguntas frecuentes en un diseño dividido de dos columnas con introducción fija y enlace de contacto junto a preguntas desplegables, para centros de ayuda y respuestas habituales."
+
+#: inc/patterns/faq-two-column.php:9
+msgid "FAQ Two Column"
+msgstr "Preguntas frecuentes en dos columnas"
+
+#: inc/patterns/faq-boxed-list.php:11
+msgid "FAQ accordion with boxed expandable cards in a centered single column, plus and minus toggles, for support questions, help center, and common answers."
+msgstr "Acordeón de preguntas frecuentes con tarjetas desplegables en una sola columna centrada, botones más/menos, para preguntas de soporte, centro de ayuda y respuestas habituales."
+
+#: inc/patterns/faq-boxed-list.php:9
+msgid "FAQ Boxed List"
+msgstr "Lista encuadrada de preguntas frecuentes"
+
+#: inc/patterns/dark-cta-band.php:11
+msgid "Bold indigo full-width call-to-action band with centered heading and dual pill buttons for free trial, sign up, get started, and conversion CTA sections."
+msgstr "Franja destacada de llamada a la acción en color índigo a ancho completo con encabezado centrado y dos botones estilo píldora para pruebas gratuitas, registros, empezar y secciones de conversión."
+
+#: inc/patterns/dark-cta-band.php:9
+msgid "Indigo CTA Band"
+msgstr "Franja de llamada a la acción índigo"
+
+#: inc/patterns/countdown-launch.php:11
+msgid "Dark centered countdown timer with email signup form for coming soon, product launch, waitlist, early access, and pre-launch reserve your seat campaigns."
+msgstr "Temporizador de cuenta atrás oscuro y centrado con formulario de registro por correo para campañas de «próximamente», lanzamientos de producto, listas de espera, acceso anticipado y reservas de plaza."
+
+#: inc/patterns/countdown-launch.php:9
+msgid "Launch Countdown"
+msgstr "Cuenta atrás de lanzamiento"
+
+#: inc/patterns/content-checklist.php:11
+msgid "Split two-column content section with a green check-circle feature checklist, heading, image, and CTA button for benefits, included features, and what you get lists."
+msgstr "Sección de contenido dividida en dos columnas con lista de verificación verde con iconos de verificación, encabezado, imagen y botón de llamada a la acción para mostrar beneficios, características incluidas y listas de contenido."
+
+#: inc/patterns/content-checklist.php:9
+msgid "Content with Checklist"
+msgstr "Contenido con lista de verificación"
+
+#: inc/patterns/contact-info-cards.php:11
+msgid "Three-column contact info cards for email, phone, and address with icons, office hours, and social links for get in touch, support, and reach us sections."
+msgstr "Tarjetas de información de contacto en tres columnas para correo, teléfono y dirección con iconos, horario de oficina y enlaces sociales para secciones de contacto, soporte y ubicación."
+
+#: inc/patterns/contact-info-cards.php:9
+msgid "Contact Info Cards"
+msgstr "Tarjetas de información de contacto"
+
+#: inc/patterns/contact-form-split.php:11
+msgid "Split two-column contact section pairing email, phone, and address details with a name-email-message form for get in touch, lead capture, and inquiry pages."
+msgstr "Sección de contacto dividida en dos columnas que combina datos de correo, teléfono y dirección con un formulario de nombre-correo-mensaje para páginas de contacto, captación y consultas."
+
+#: inc/patterns/contact-form-split.php:9
+msgid "Contact Form with Details"
+msgstr "Formulario de contacto con detalles"
+
+#: inc/patterns/cafe-menu.php:11
+msgid "Full cafe menu page with priced drinks and food lists, dish cards, and a photo gallery for coffee shops, restaurants, price list, and food menu layouts."
+msgstr "Página completa de menú de cafetería con listas de bebidas y platos con precios, tarjetas de especialidades y galería de fotos para cafeterías, restaurantes, cartas de precios y menús."
+
+#: inc/patterns/cafe-menu.php:9
+msgid "Cafe - Menu"
+msgstr "Cafetería - Menú"
+
+#: inc/patterns/cafe-homepage.php:11
+msgid "Full cafe homepage with image-overlay hero, feature icons, menu favorites cards, review quote, and location CTA for coffee shops, restaurants, and bakeries."
+msgstr "Página de inicio completa de cafetería con cabecera con superposición de imagen, iconos de características, tarjetas de platos favoritos, cita de reseña y llamada a la acción para la ubicación para cafeterías, restaurantes y panaderías."
+
+#: inc/patterns/cafe-homepage.php:9
+msgid "Cafe - Homepage"
+msgstr "Cafetería - Inicio"
+
+#: inc/patterns/cafe-contact.php:11
+msgid "Full cafe contact page with address and hours details, info cards, and a name-email-message contact form for coffee shops, restaurants, and local business get in touch."
+msgstr "Página de contacto completa para cafetería con detalles de dirección y horario, tarjetas de información y formulario de contacto de nombre-correo-mensaje para cafeterías, restaurantes y negocios locales."
+
+#: inc/patterns/cafe-contact.php:9
+msgid "Cafe - Contact"
+msgstr "Cafetería - Contacto"
+
+#: inc/patterns/cafe-about.php:11
+msgid "Full cafe about us page with split story hero, dark stats bar, values icon grid, team portraits, and visit CTA for coffee shops, restaurants, and local business."
+msgstr "Página «Sobre nosotros» completa para cafetería con cabecera dividida de historia, barra de estadísticas oscura, cuadrícula de iconos de valores, retratos del equipo y llamada a la acción para visitas para cafeterías, restaurantes y negocios locales."
+
+#: inc/patterns/cafe-about.php:9
+msgid "Cafe - About"
+msgstr "Cafetería - Sobre nosotros"
+
+#: inc/patterns/bold-image-hero.php:11
+msgid "Bold split two-column hero with full-bleed product image, badge, dual CTA buttons, and star rating for ecommerce shops, landing pages, and above the fold banners."
+msgstr "Cabecera destacada dividida en dos columnas con imagen de producto a sangre, insignia, dos botones de llamada a la acción y valoración por estrellas para tiendas electrónicas, páginas de aterrizaje y banners principales."
+
+#: inc/patterns/bold-image-hero.php:9
+msgid "Bold Image Hero"
+msgstr "Cabecera destacada con imagen"
+
+#: inc/patterns/blog-featured-list.php:11
+msgid "Two-column blog layout pairing one large featured article with a stacked list of recent posts for news, magazine, latest stories, and article archives."
+msgstr "Diseño de blog de dos columnas que combina un artículo destacado grande con una lista apilada de entradas recientes para noticias, revistas, historias recientes y archivos de artículos."
+
+#: inc/patterns/blog-featured-list.php:9
+msgid "Blog Featured & List"
+msgstr "Blog destacado y lista"
+
+#: inc/patterns/aw-video-feature.php:11
+msgid "Dark centered video feature with a framed YouTube embed for product demos, explainer videos, watch the demo, tutorials, and webinar previews."
+msgstr "Sección oscura de vídeo centrado con vídeo incrustado de YouTube enmarcado para demostraciones de producto, vídeos explicativos, reproducciones de demostración, tutoriales y vistas previas de seminarios web."
+
+#: inc/patterns/aw-video-feature.php:9
+msgid "Video Feature"
+msgstr "Vídeo destacado"
+
+#: inc/patterns/aw-timeline-steps.php:11
+msgid "Vertical timeline with numbered icon markers showing a step-by-step how-it-works process, onboarding flow, roadmap, and getting started guide."
+msgstr "Línea de tiempo vertical con marcadores de iconos numerados que muestra un proceso paso a paso de cómo funciona, flujo de incorporación, hoja de ruta y guía de inicio rápido."
+
+#: inc/patterns/aw-timeline-steps.php:9
+msgid "Timeline Steps"
+msgstr "Pasos de la línea de tiempo"
+
+#: inc/patterns/aw-testimonial-cards.php:11
+msgid "Three-column testimonial cards with five-star ratings, customer quotes, and avatars for social proof, reviews, customer feedback, and trust building."
+msgstr "Tarjetas de testimonios de tres columnas con valoraciones de cinco estrellas, citas de clientes y avatares para prueba social, valoraciones, comentarios de clientes y generación de confianza."
+
+#: inc/patterns/aw-testimonial-cards.php:9
+msgid "Testimonial Cards"
+msgstr "Tarjetas de testimonios"
+
+#: inc/patterns/aw-team-grid.php:11
+msgid "Team grid with grayscale hover portraits in a four-column layout for staff, founders, about us, meet the team, and employee headshots with roles."
+msgstr "Cuadrícula del equipo con retratos que cambian a escala de grises al pasar el cursor en un diseño de cuatro columnas para personal, fundadores, «Sobre nosotros», conocer al equipo y fotos de empleados con sus cargos."
+
+#: inc/patterns/aw-team-grid.php:9
+msgid "Team Grid with Hover Effect"
+msgstr "Cuadrícula del equipo con efecto al pasar el cursor"
+
+#: inc/patterns/aw-stats-banner.php:11
+msgid "Dark gradient stats bar showing key numbers and metrics in a centered four-column grid for social proof, KPIs, by-the-numbers, and company milestones."
+msgstr "Barra oscura de estadísticas en degradado que muestra números y métricas clave en una cuadrícula centrada de cuatro columnas para prueba social, indicadores, datos numéricos y logros de la empresa."
+
+#: inc/patterns/aw-stats-banner.php:9
+msgid "Gradient Stats Banner"
+msgstr "Banner de estadísticas en degradado"
+
+#: inc/patterns/aw-review-stars.php:11
+msgid "Three-column testimonial cards with star ratings, quotes and author avatars for customer reviews, social proof, ratings wall, and feedback section."
+msgstr "Tarjetas de testimonios de tres columnas con valoraciones por estrellas, citas y avatares de autores para opiniones de clientes, prueba social, mural de valoraciones y sección de comentarios."
+
+#: inc/patterns/aw-review-stars.php:9
+msgid "Star Rating Reviews"
+msgstr "Reseñas con valoración por estrellas"
+
+#: inc/patterns/aw-quote-spotlight.php:11
+msgid "Centered dark testimonial spotlight with large pull quote, five-star rating and author avatar for customer review, social proof, and single quote feature."
+msgstr "Testimonio destacado oscuro y centrado con cita grande, valoración de cinco estrellas y avatar de autor para opiniones de clientes, prueba social y citas destacadas."
+
+#: inc/patterns/aw-quote-spotlight.php:9
+msgid "Spotlight Quote"
+msgstr "Cita destacada"
+
+#: inc/patterns/aw-pricing-tiers.php:11
+msgid "Three-column pricing table with highlighted popular tier, checkmark feature lists and buttons for subscription plans, pricing comparison, and billing tiers."
+msgstr "Tabla de precios de tres columnas con nivel popular destacado, listas de características con marcas de verificación y botones para planes de suscripción, comparativa de precios y niveles de facturación."
+
+#: inc/patterns/aw-pricing-tiers.php:9
+msgid "Pricing Tiers"
+msgstr "Niveles de precios"
+
+#: inc/patterns/aw-portfolio-grid.php:11
+msgid "Dark two-column portfolio showcase grid with image overlays, category tags and zoom hover for project work, case studies, and creative agency gallery."
+msgstr "Cuadrícula oscura de presentación de portafolios de dos columnas con superposiciones de imagen, etiquetas de categoría y zoom al pasar el cursor para proyectos, casos de estudio y galerías de agencias creativas."
+
+#: inc/patterns/aw-portfolio-grid.php:9
+msgid "Portfolio Showcase Grid"
+msgstr "Cuadrícula de muestra de portafolio"
+
+#: inc/patterns/aw-icon-grid.php:11
+msgid "Compact four-column icon feature grid with rounded icon badges and short labels for listing capabilities, services, perks, and product highlights."
+msgstr "Cuadrícula compacta de características con iconos en cuatro columnas con insignias redondeadas y etiquetas cortas para listar funcionalidades, servicios, ventajas y puntos fuertes del producto."
+
+#: inc/patterns/aw-icon-grid.php:9
+msgid "Icon Feature Grid"
+msgstr "Cuadrícula de características con iconos"
+
+#: inc/patterns/aw-hero-split.php:12
+msgid "Split two-column hero header with gradient headline, buttons, avatar social proof and product image for landing page intro and above-the-fold banner."
+msgstr "Encabezado principal dividido en dos columnas con titular en degradado, botones, prueba social con avatares e imagen de producto para introducción de página de aterrizaje y banner principal."
+
+#: inc/patterns/aw-hero-split.php:9
+msgid "Split Hero"
+msgstr "Cabecera dividida"
+
+#: inc/patterns/aw-hero-centered.php:11
+msgid "Centered hero header above the fold with rating badge, headline, dual buttons and a browser dashboard mockup for landing page intro and product launch."
+msgstr "Encabezado centrado para la sección principal superior con insignia de valoración, titular, dos botones y una maqueta del panel en navegador para introducción de página de aterrizaje y lanzamientos de producto."
+
+#: inc/patterns/aw-hero-centered.php:9
+msgid "Centered Hero"
+msgstr "Cabecera centrada"
+
+#: inc/patterns/aw-glow-cta.php:11
+msgid "Centered dark call-to-action with neon glow blur orbs, badge and dual buttons for beta sign-up, conversion, lead capture, and above-the-fold promos."
+msgstr "Llamada a la acción oscura y centrada con orbes resplandecientes en neón, insignia y dos botones para registros de versión beta, conversión, captación de clientes y promociones principales."
+
+#: inc/patterns/aw-glow-cta.php:9
+msgid "Glow CTA"
+msgstr "Llamada a la acción resplandeciente"
+
+#: inc/patterns/aw-gallery-grid.php:11
+msgid "Masonry photo gallery grid with rounded images and zoom hover effect for showcasing portfolio work, photography, image collections, and visual showcase."
+msgstr "Cuadrícula de galería de fotos estilo mosaico con imágenes redondeadas y efecto de zoom al pasar el cursor para mostrar trabajos de portafolio, fotografía, colecciones de imágenes y muestras visuales."
+
+#: inc/patterns/aw-gallery-grid.php:9
+msgid "Gallery Masonry Grid"
+msgstr "Cuadrícula de galería en mosaico"
+
+#: inc/patterns/aw-feature-split.php:11
+msgid "Split two-column feature section with checklist of benefits beside a glowing product image for highlighting capabilities, value props, and why-choose-us."
+msgstr "Sección de características dividida en dos columnas con lista de verificación de beneficios junto a una imagen de producto resplandeciente para destacar capacidades, propuestas de valor y motivos para elegirnos."
+
+#: inc/patterns/aw-feature-split.php:9
+msgid "Feature Split"
+msgstr "Características divididas"
+
+#: inc/patterns/aw-feature-cards.php:11
+msgid "Three-column feature card grid with icon badges, hover lift effect and learn-more links for highlighting product benefits, services, and capabilities."
+msgstr "Cuadrícula de tarjetas de características de tres columnas con insignias con iconos, efecto de elevación al pasar el cursor y enlaces para saber más para destacar beneficios del producto, servicios y capacidades."
+
+#: inc/patterns/aw-feature-cards.php:9
+msgid "Feature Cards"
+msgstr "Tarjetas de características"
+
+#: inc/patterns/aw-faq-cards.php:11
+msgid "Centered FAQ accordion with expandable bordered cards and plus-minus toggle icons for frequently asked questions, support answers, and help section."
+msgstr "Acordeón centrado de preguntas frecuentes con tarjetas desplegables con borde e iconos de alternancia más-menos para preguntas frecuentes, respuestas de soporte y sección de ayuda."
+
+#: inc/patterns/aw-faq-cards.php:9
+msgid "FAQ Cards"
+msgstr "Tarjetas de preguntas frecuentes"
+
+#: inc/patterns/aw-cta-banner.php:11
+msgid "Centered full-width gradient call-to-action banner with badge, headline and dual buttons for sign-up conversion, lead capture, and launch offers."
+msgstr "Banner centrado de llamada a la acción a ancho completo en degradado con insignia, titular y dos botones para conversión de registros, captación de clientes y ofertas de lanzamiento."
+
+#: inc/patterns/aw-cta-banner.php:9
+msgid "CTA Banner"
+msgstr "Banner de llamada a la acción"
+
+#: inc/patterns/aw-case-study-metrics.php:11
+msgid "Split two-column case study with image and headline results metrics, stats bar, and read more link for customer success stories and social proof."
+msgstr "Caso de estudio dividido en dos columnas con imagen y métricas destacadas de resultados, barra de estadísticas y enlace para leer más para historias de éxito de clientes y prueba social."
+
+#: inc/patterns/aw-case-study-metrics.php:9
+msgid "Case Study With Metrics"
+msgstr "Caso de estudio con métricas"
+
+#: inc/patterns/aw-blog-cards.php:11
+msgid "Three-column blog post card grid with featured images, category tags, read time and excerpts for latest articles, news feed, and recent posts."
+msgstr "Cuadrícula de tarjetas de entradas de blog en tres columnas con imágenes destacadas, etiquetas de categoría, tiempo de lectura y extractos para artículos recientes, noticias y publicaciones del sitio."
+
+#: inc/patterns/aw-blog-cards.php:9
+msgid "Blog Post Cards"
+msgstr "Tarjetas de entradas del blog"
+
+#: inc/patterns/aw-bento-features.php:11
+msgid "Bento-style feature grid with mixed-size cards, gradient and dark tiles, icons and glow accents for showcasing product benefits, capabilities, and highlights."
+msgstr "Cuadrícula de características estilo Bento con tarjetas de tamaños mixtos, mosaicos oscuros y en degradado, iconos y detalles resplandecientes para mostrar beneficios del producto, capacidades y puntos fuertes."
+
+#: inc/patterns/aw-bento-features.php:9
+msgid "Bento Feature Grid"
+msgstr "Cuadrícula de características Bento"
+
+#: inc/integrations/api/form-response-data.php:400
+msgid "The captcha service could not be reached. The submission was saved, but it was not delivered."
+msgstr "No se ha podido conectar con el servicio captcha. El envío se ha guardado, pero no se ha entregado."
+
+#: inc/integrations/api/form-response-data.php:395
+msgid "The AI Autoresponder reply did not pass validation. The fallback message was used."
+msgstr "La respuesta de la respuesta automática por IA no ha pasado la validación. Se ha utilizado el mensaje de reserva."
+
+#: inc/integrations/api/form-response-data.php:394
+msgid "The AI Autoresponder reply could not be generated. The fallback message was used."
+msgstr "No se ha podido generar la respuesta automática por IA. Se ha utilizado el mensaje de reserva."
+
+#: inc/integrations/api/form-response-data.php:379
+msgid "The captcha is not configured: the API keys are missing."
+msgstr "El captcha no está configurado: faltan las claves API."
+
+#. translators: %d: slide number.
+#: inc/class-registration.php:781 build/blocks/blocks.js:42
+msgid "Go to slide %d"
+msgstr "Ir a la diapositiva %d"
+
+#: inc/class-registration.php:672
+msgid "Captcha is not loaded. Please check your browser plugins to allow it."
+msgstr "El captcha no se ha cargado. Comprueba los plugins de tu navegador para permitirlo."
+
+#: inc/class-patterns.php:103
+msgid "Wellness Pack (Pages)"
+msgstr "Paquete de bienestar (Páginas)"
+
+#: inc/class-patterns.php:102
+msgid "Record Shop Pack (Pages)"
+msgstr "Paquete de tienda de discos (Páginas)"
+
+#: inc/class-patterns.php:101
+msgid "Travel Pack (Pages)"
+msgstr "Paquete de viajes (Páginas)"
+
+#: inc/class-patterns.php:100
+msgid "Tattoo Studio Pack (Pages)"
+msgstr "Paquete de estudio de tatuajes (Páginas)"
+
+#: inc/class-patterns.php:99
+msgid "Photography Pack (Pages)"
+msgstr "Paquete de fotografía (Páginas)"
+
+#: inc/class-patterns.php:98
+msgid "Outdoor Pack (Pages)"
+msgstr "Paquete de actividades al aire libre (Páginas)"
+
+#: inc/class-patterns.php:96
+msgid "Festival Pack (Pages)"
+msgstr "Paquete de festivales (Páginas)"
+
+#: inc/class-patterns.php:95
+msgid "Fashion Pack (Pages)"
+msgstr "Paquete de moda (Páginas)"
+
+#: inc/class-patterns.php:94
+msgid "Fine Dining Pack (Pages)"
+msgstr "Paquete de alta cocina (Páginas)"
+
+#: inc/class-patterns.php:93
+msgid "Climbing Gym Pack (Pages)"
+msgstr "Paquete de rocódromo (Páginas)"
+
+#: inc/class-patterns.php:92
+msgid "Cafe Pack (Pages)"
+msgstr "Paquete de cafetería (Páginas)"
+
+#: inc/class-patterns.php:90
+msgid "Brewery Pack (Pages)"
+msgstr "Paquete de cervecería (Páginas)"
+
+#: inc/class-patterns.php:89
+msgid "Architecture Pack (Pages)"
+msgstr "Paquete de arquitectura (Páginas)"
+
+#: inc/class-patterns.php:85
+msgid "Icons & Illustrations"
+msgstr "Iconos e ilustraciones"
+
+#: inc/class-patterns.php:84 build/patterns-library/index.js:1
+msgid "Video"
+msgstr "Vídeo"
+
+#: inc/class-patterns.php:81
+msgid "Stats"
+msgstr "Estadísticas"
+
+#: inc/class-patterns.php:77
+msgid "Waitlist / Coming Soon"
+msgstr "Lista de espera / Próximamente"
+
+#: inc/class-patterns.php:76
+msgid "Newsletter"
+msgstr "Boletín informativo"
+
+#: inc/class-patterns.php:75 build/blocks/blocks.js:75
+msgid "Contact"
+msgstr "Contacto"
+
+#: inc/class-patterns.php:69
+msgid "Portfolio & Case Studies"
+msgstr "Portafolio y casos de estudio"
+
+#: inc/class-patterns.php:66
+msgid "Blog / News"
+msgstr "Blog / Noticias"
+
+#: inc/plugins/class-form-submissions.php:583
+msgid "Invalid post type"
+msgstr "Tipo de contenido no válido"
+
+#: inc/plugins/class-form-submissions.php:579
+msgid "Invalid post ID"
+msgstr "ID de contenido no válido"
+
+#: inc/plugins/class-form-submissions.php:575
+msgid "Post ID is required"
+msgstr "El ID de contenido es obligatorio"
+
+#: inc/plugins/class-form-submissions.php:571
+msgid "Security check failed"
+msgstr "Ha fallado la comprobación de seguridad"
+
+#: inc/plugins/class-form-submissions.php:228
+msgid "Dumped data"
+msgstr "Datos volcados"
+
+#. translators: %s the number of posts
+#: inc/plugins/class-form-records-post-type.php:84
+msgid "Unread <span class=\"count\">(%s)</span>"
+msgid_plural "Unread <span class=\"count\">(%s)</span>"
+msgstr[0] "No leído <span class=\"count\">(%s)</span>"
+msgstr[1] "No leídos <span class=\"count\">(%s)</span>"
+
+#: inc/plugins/class-form-records-post-type.php:78
+msgctxt "otter-form-record"
+msgid "Unread"
+msgstr "No leídos"
+
+#: inc/plugins/class-form-records-post-type.php:61
+msgctxt "otter-form-record"
+msgid "Read"
+msgstr "Leídos"
+
+#: inc/plugins/class-form-records-post-type.php:50
+msgid "Holds the data from the form submissions"
+msgstr "Almacena los datos de los envíos del formulario"
+
+#: inc/plugins/class-form-records-post-type.php:44
+msgid "No submissions found in the Trash"
+msgstr "No se han encontrado envíos en la papelera"
+
+#: inc/plugins/class-form-records-post-type.php:43
+msgid "No submissions found"
+msgstr "No se han encontrado envíos"
+
+#: inc/plugins/class-form-records-post-type.php:42
+msgid "Update Submission"
+msgstr "Actualizar envío"
+
+#: inc/plugins/class-form-records-post-type.php:41
+msgid "View Submission"
+msgstr "Ver envío"
+
+#: inc/plugins/class-form-records-post-type.php:39
+msgid "Search Submissions"
+msgstr "Buscar envíos"
+
+#: inc/plugins/class-form-records-post-type.php:38
+msgid "Form Submission"
+msgstr "Envío de formulario"
+
+#: inc/plugins/class-form-records-meta-box.php:413
+msgid "Submitted on"
+msgstr "Enviado el"
+
+#: inc/plugins/class-form-records-meta-box.php:221
+msgid "User cannot edit this post."
+msgstr "El usuario no puede editar esta entrada."
+
+#: inc/plugins/class-form-records-meta-box.php:217
+msgid "Nonce not verified."
+msgstr "Nonce no verificado."
+
+#: inc/plugins/class-form-records-meta-box.php:182
+msgid "Generated reply"
+msgstr "Respuesta generada"
+
+#: inc/plugins/class-form-records-meta-box.php:177
+msgid "Tokens used"
+msgstr "Tokens utilizados"
+
+#: inc/plugins/class-form-records-meta-box.php:172
+msgid "Reason"
+msgstr "Motivo"
+
+#: inc/plugins/class-form-records-meta-box.php:168
+msgid "Valid"
+msgstr "Válido"
+
+#: inc/plugins/class-form-records-meta-box.php:167
+msgid "Verdict"
+msgstr "Veredicto"
+
+#: inc/plugins/class-form-records-meta-box.php:163
+msgid "Outcome"
+msgstr "Resultado"
+
+#: inc/plugins/class-form-records-meta-box.php:156
+msgid "Nothing sent"
+msgstr "Nada enviado"
+
+#: inc/plugins/class-form-records-meta-box.php:155
+msgid "Fallback message sent"
+msgstr "Mensaje de reserva enviado"
+
+#: inc/plugins/class-form-records-meta-box.php:154
+msgid "AI reply sent"
+msgstr "Respuesta de IA enviada"
+
+#: inc/plugins/class-form-records-meta-box.php:118
+msgid "Code"
+msgstr "Código"
+
+#: inc/plugins/class-form-records-meta-box.php:86
+msgid "AI Autoresponder"
+msgstr "Respuesta automática por IA"
+
+#: inc/plugins/class-form-records-meta-box.php:74
+msgid "Errors"
+msgstr "Errores"
+
+#: inc/plugins/class-form-records-meta-box.php:63
+msgid "Submission Data"
+msgstr "Datos del envío"
+
+#: inc/plugins/class-form-records-list-table.php:306
+#: inc/plugins/class-form-records-meta-box.php:420
+msgid "Complete"
+msgstr "Completado"
+
+#: inc/plugins/class-form-records-list-table.php:300
+#: inc/plugins/class-form-records-meta-box.php:420
+msgid "Failed"
+msgstr "Fallido"
+
+#: inc/plugins/class-form-records-list-table.php:249
+msgid "(no title)"
+msgstr "(sin título)"
+
+#: inc/plugins/class-form-records-list-table.php:121
+msgid "Restore"
+msgstr "Restaurar"
+
+#: inc/plugins/class-form-records-list-table.php:118
+#: inc/plugins/class-form-records-list-table.php:159
+msgid "Mark as Read"
+msgstr "Marcar como leído"
+
+#: inc/plugins/class-form-records-list-table.php:114
+#: inc/plugins/class-form-records-list-table.php:167
+msgid "Mark as Unread"
+msgstr "Marcar como no leído"
+
+#: inc/plugins/class-form-records-list-table.php:111
+#: inc/plugins/class-form-records-meta-box.php:444
+msgid "Move to Trash"
+msgstr "Mover a la papelera"
+
+#: inc/plugins/class-form-records-export.php:130
+#: inc/plugins/class-form-records-list-table.php:84
+#: inc/plugins/class-form-records-list-table.php:97
+msgid "Submission Date"
+msgstr "Fecha de envío"
+
+#: inc/plugins/class-form-records-list-table.php:83
+#: inc/plugins/class-form-records-meta-box.php:419
+msgid "Delivery"
+msgstr "Entrega"
+
+#: inc/plugins/class-form-records-export.php:128
+#: inc/plugins/class-form-records-list-table.php:82
+#: inc/plugins/class-form-records-list-table.php:96
+msgid "ID"
+msgstr "ID"
+
+#: inc/plugins/class-form-records-list-table.php:81
+#: inc/plugins/class-form-records-meta-box.php:408
+msgid "Post"
+msgstr "Entrada"
+
+#: inc/plugins/class-form-records-list-table.php:80
+msgid "Form ID"
+msgstr "ID del formulario"
+
+#: inc/plugins/class-form-records-filters.php:64
+#: inc/plugins/class-form-records-filters.php:236
+msgid "All Posts"
+msgstr "Todas las entradas"
+
+#: inc/plugins/class-form-records-filters.php:61
+#: inc/plugins/class-form-records-filters.php:210
+msgid "All Forms"
+msgstr "Todos los formularios"
+
+#: inc/plugins/class-form-records-filters.php:59
+msgid "Filtering by form and post is available in Otter Pro."
+msgstr "El filtrado por formulario y entrada está disponible en Otter Pro."
+
+#: inc/plugins/class-form-records-export.php:56
+msgid "You are not allowed to export submissions."
+msgstr "No tienes permisos para exportar envíos."
+
+#: inc/plugins/class-form-records-export.php:52
+msgid "Invalid nonce."
+msgstr "Nonce no válido."
+
+#: inc/plugins/class-form-records-export.php:47
+msgid "Exporting submissions requires Otter Pro."
+msgstr "Exportar envíos requiere Otter Pro."
+
+#: inc/plugins/class-dashboard.php:762
+msgid "Bulk export is available in Otter Pro."
+msgstr "La exportación masiva está disponible en Otter Pro."
+
+#: inc/plugins/class-dashboard.php:756
+msgid "Filter and export form submissions with Otter Pro."
+msgstr "Filtra y exporta envíos de formularios con Otter Pro."
+
+#: inc/plugins/class-dashboard.php:431
+msgid "Otter Tutorials"
+msgstr "Tutoriales de Otter"
+
+#: inc/plugins/class-dashboard.php:176
+msgid "Get Support"
+msgstr "Obtener soporte"
+
+#: inc/plugins/class-dashboard.php:161
+msgid "Before you go"
+msgstr "Antes de que te vayas"
+
+#. translators: %s: number of pages, already wrapped in <strong>, e.g. "13
+#. pages".
+#: inc/plugins/class-dashboard.php:150
+msgid "Otter Blocks is active on %s. Uninstalling may break parts of your site."
+msgstr "Otter Blocks está activo en %s. Desinstalarlo podría romper partes de tu sitio."
+
+#. translators: %s: number of pages, e.g. "13".
+#: inc/plugins/class-dashboard.php:146
+msgid "%s page"
+msgid_plural "%s pages"
+msgstr[0] "%s página"
+msgstr[1] "%s páginas"
+
+#: inc/patterns/wellness-homepage.php:11
+msgid "Wellness homepage with split image hero, class cards grid, three-column benefits, star testimonial, dark membership pricing, and free-class CTA for yoga and meditation studios"
+msgstr "Página de inicio de bienestar con cabecera de imagen dividida, cuadrícula de tarjetas de clases, beneficios en tres columnas, testimonio con estrellas, precios de membresía oscuros y llamada a la acción para clase gratuita para estudios de yoga y meditación"
+
+#: inc/patterns/wellness-contact.php:11
+msgid "Wellness contact page with a studio address and hours split layout, three-column visit-info icon grid, and an email CTA banner for yoga studios and spas"
+msgstr "Página de contacto de bienestar con diseño dividido para dirección y horario del estudio, cuadrícula de iconos de tres columnas para información de visitas y banner de llamada a la acción por correo para estudios de yoga y spas"
+
+#: inc/patterns/wellness-contact.php:9
+msgid "Wellness - Contact"
+msgstr "Bienestar - Contacto"
+
+#: inc/patterns/wellness-classes.php:11
+msgid "Wellness classes page with a class schedule cards grid, a three-column pricing table for drop-in, monthly, and annual plans, and a free-trial CTA for yoga studios"
+msgstr "Página de clases de bienestar con cuadrícula de tarjetas de horarios, tabla de precios de tres columnas para clases sueltas, planes mensuales y anuales, y llamada a la acción para prueba gratuita en estudios de yoga"
+
+#: inc/patterns/wellness-classes.php:9
+msgid "Wellness - Classes"
+msgstr "Bienestar - Clases"
+
+#: inc/patterns/waitlist-coming-soon.php:11
+msgid "Dark coming-soon waitlist hero with glowing mesh gradient blobs, gradient headline, email signup form, and avatar social proof for product launch and early access"
+msgstr "Cabecera oscura de lista de espera «Próximamente» con degradados brillantes de malla, titular en degradado, formulario de registro de correo y prueba social con avatares para lanzamiento de productos y acceso anticipado"
+
+#: inc/patterns/waitlist-coming-soon.php:9
+msgid "Coming Soon Waitlist"
+msgstr "Lista de espera «Próximamente»"
+
+#: inc/patterns/video-hero-play.php:11
+msgid "Dark centered video hero with an embedded YouTube player in a rounded frame, headline, and caption for product demos, explainer films, and watch-the-video sections"
+msgstr "Cabecera oscura de vídeo centrada con reproductor de YouTube incrustado en un marco redondeado, titular y leyenda para demostraciones de producto, vídeos explicativos y secciones para ver vídeo"
+
+#: inc/patterns/video-hero-play.php:9
+msgid "Video Hero With Play"
+msgstr "Cabecera de vídeo con reproducción"
+
+#: inc/patterns/travel-tours.php:11
+msgid "Travel tours listing page with a three-column tour cards grid showing prices and durations, an included-features split section, and a quiz CTA for trip packages"
+msgstr "Página de listado de tours de viajes con cuadrícula de tarjetas de tours de tres columnas que muestra precios y duraciones, sección dividida de características incluidas y llamada a la acción con cuestionario para paquetes de viajes"
+
+#: inc/patterns/travel-tours.php:9
+msgid "Travel - Tours"
+msgstr "Viajes - Tours"
+
+#: inc/patterns/travel-homepage.php:11
+msgid "Travel homepage with full-width image hero, featured trip cards grid, three-column benefits, dark stats bar, star testimonial, and booking CTA for tour operators"
+msgstr "Página de inicio de viajes con cabecera de imagen de ancho completo, cuadrícula de tarjetas de viajes destacados, beneficios en tres columnas, barra de estadísticas oscura, testimonio con estrellas y llamada a la acción para reservas en agencias de viajes"
+
+#: inc/patterns/travel-homepage.php:9
+msgid "Travel - Homepage"
+msgstr "Viajes - Inicio"
+
+#: inc/patterns/travel-contact.php:11
+msgid "Travel contact page with address and phone details split layout, three-column service icon grid, and a centered contact form for trip enquiries and bookings"
+msgstr "Página de contacto de viajes con diseño dividido de dirección y teléfono, cuadrícula de iconos de servicio de tres columnas y formulario de contacto centrado para consultas y reservas de viajes"
+
+#: inc/patterns/travel-contact.php:9
+msgid "Travel - Contact"
+msgstr "Viajes - Contacto"
+
+#: inc/patterns/travel-about.php:11
+msgid "Travel about-us page with split hero, dark stats bar, three-column values icon grid, team member grid, and closing CTA banner for tour and adventure brands"
+msgstr "Página «Sobre nosotros» de viajes con cabecera dividida, barra de estadísticas oscura, cuadrícula de iconos de valores de tres columnas, cuadrícula del equipo y banner final de llamada a la acción para marcas de tours y aventuras"
+
+#: inc/patterns/travel-about.php:9
+msgid "Travel - About"
+msgstr "Viajes - Sobre nosotros"
+
+#: inc/server/class-prompt-server.php:245
+msgid "The AI backend returned an invalid response."
+msgstr "El servidor backend de IA ha devuelto una respuesta no válida."
+
+#: inc/server/class-prompt-server.php:202
+msgid "Invalid prompt request body."
+msgstr "Cuerpo de solicitud de instrucción no válido."
+
+#: inc/server/class-otter-openai-backend.php:190
+msgid "OpenAI returned an empty response. Please try again."
+msgstr "OpenAI ha devuelto una respuesta vacía. Inténtalo de nuevo."
+
+#: inc/server/class-otter-openai-backend.php:166
+msgid "The OpenAI response body is invalid."
+msgstr "El cuerpo de la respuesta de OpenAI no es válido."
+
+#: inc/server/class-otter-openai-backend.php:104
+msgid "The OpenAI request arguments are invalid."
+msgstr "Los argumentos de la solicitud a OpenAI no son válidos."
+
+#: inc/server/class-otter-openai-backend.php:50
+msgid "The OpenAI request payload is invalid."
+msgstr "La carga útil de la solicitud a OpenAI no es válida."
+
+#: inc/server/class-otter-openai-backend.php:39
+msgid "No OpenAI API key is configured. Add your API key in the Otter dashboard under Integrations."
+msgstr "No hay ninguna clave API de OpenAI configurada. Añade tu clave API en el escritorio de Otter, dentro de Integraciones."
+
+#: inc/server/class-ai-client-adaptor.php:308
+msgid "The AI provider returned an unexpected error. Please try again."
+msgstr "El proveedor de IA ha devuelto un error inesperado. Inténtalo de nuevo."
+
+#: inc/server/class-ai-client-adaptor.php:301
+msgid "The AI request took too long and timed out. Try again, or narrow the selection so there is less to generate."
+msgstr "La solicitud de IA ha tardado demasiado y ha agotado el tiempo de espera. Inténtalo de nuevo o reduce la selección para generar menos contenido."
+
+#: inc/server/class-ai-client-adaptor.php:296
+msgid "The AI provider was temporarily unavailable (bad gateway). Please try again."
+msgstr "El proveedor de IA no estaba disponible temporalmente (puerta de enlace no válida). Inténtalo de nuevo."
+
+#: inc/server/class-ai-client-adaptor.php:180
+msgid "The AI prompt must end with a user message."
+msgstr "La instrucción de IA debe terminar con un mensaje de usuario."
+
+#: inc/server/class-ai-client-adaptor.php:154
+msgid "AI message content must be plain text."
+msgstr "El contenido del mensaje de IA debe ser texto plano."
+
+#: inc/server/class-ai-client-adaptor.php:125
+#: inc/server/class-ai-client-adaptor.php:132
+msgid "No AI provider is configured. Add an API key under Settings → Connectors in your WordPress dashboard."
+msgstr "No hay ningún proveedor de IA configurado. Añade una clave API en Ajustes → Conectores dentro de tu escritorio de WordPress."
+
+#: inc/render/class-form-captcha-block.php:30
+msgid "Captcha is not configured — form submissions will be blocked. Add the API keys in Settings > Otter > Integrations."
+msgstr "Captcha no está configurado: los envíos de formularios se bloquearán. Añade las claves API en Ajustes > Otter > Integraciones."
+
+#: inc/plugins/class-options-settings.php:1192 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Simplify this so it is easier to read."
+msgstr "Simplifica esto para que sea más fácil de leer."
+
+#: inc/plugins/class-options-settings.php:1191 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Simplify"
+msgstr "Simplificar"
+
+#: inc/plugins/class-options-settings.php:1185 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Fix any spelling and grammar mistakes, keeping the original tone."
+msgstr "Corrige cualquier error ortográfico o gramatical, manteniendo el tono original."
+
+#: inc/plugins/class-options-settings.php:1184 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Fix Grammar"
+msgstr "Corregir gramática"
+
+#: inc/plugins/class-options-settings.php:1178 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Rewrite this in a more professional tone."
+msgstr "Reescribe esto con un tono más profesional."
+
+#: inc/plugins/class-options-settings.php:1177 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Change Tone"
+msgstr "Cambiar tono"
+
+#: inc/plugins/class-options-settings.php:1171 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Translate this into English."
+msgstr "Traduce esto al inglés."
+
+#: inc/plugins/class-options-settings.php:1170 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Translate"
+msgstr "Traducir"
+
+#: inc/plugins/class-options-settings.php:1164 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Make this shorter while preserving the key meaning."
+msgstr "Haz esto más corto manteniendo el significado clave."
+
+#: inc/plugins/class-options-settings.php:1163 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Shorten"
+msgstr "Acortar"
+
+#: inc/plugins/class-options-settings.php:1157 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Expand this with useful supporting detail."
+msgstr "Amplía esto con detalles secundarios útiles."
+
+#: inc/plugins/class-options-settings.php:1156 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Expand"
+msgstr "Ampliar"
+
+#: inc/plugins/class-options-settings.php:1150 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Summarize this concisely."
+msgstr "Resume esto de forma concisa."
+
+#: inc/plugins/class-options-settings.php:1149 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Summarize"
+msgstr "Resumir"
+
+#: inc/plugins/class-options-settings.php:1143 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Rewrite this for clarity and flow."
+msgstr "Reescribe esto para mejorar su claridad y fluidez."
+
+#: inc/plugins/class-options-settings.php:1142 build/blocks/blocks.js:33
+#: build/dashboard/index.js:9
+msgid "Rewrite"
+msgstr "Reescribir"
+
+#: inc/plugins/class-options-settings.php:1013
+msgid "WordPress AI Client provider and model preferences for Otter AI features."
+msgstr "Preferencias de proveedor y modelo del cliente de WordPress AI para las funciones de Otter AI."
+
+#: inc/plugins/class-options-settings.php:1002
+msgid "Whether AI toolbar actions were migrated to the canonical option."
+msgstr "Si las acciones de la barra de herramientas de IA se migraron a la opción canónica."
+
+#: inc/plugins/class-options-settings.php:366
+msgid "Cloudflare Turnstile Secret key for the Form Block."
+msgstr "Clave secreta de Cloudflare Turnstile para el bloque Formulario."
+
+#: inc/plugins/class-options-settings.php:354
+msgid "Cloudflare Turnstile Site key for the Form Block."
+msgstr "Clave del sitio de Cloudflare Turnstile para el bloque Formulario."
+
+#: inc/plugins/class-options-settings.php:295
+msgid "Whether the activation first-save milestone has already been tracked for this site."
+msgstr "Si el hito del primer guardado tras la activación ya se ha registrado para este sitio."
+
+#: inc/plugins/class-form-submissions.php:587
+msgid "You are not allowed to manage this submission."
+msgstr "No tienes permisos para gestionar este envío."
+
+#: inc/plugins/class-form-records-list-table.php:122
+msgid "Delete Permanently"
+msgstr "Borrar permanentemente"
+
+#. translators: %s the ID of the submission
+#: inc/plugins/class-form-submissions.php:210
+msgid "Submission #%s"
+msgstr "Envío #%s"
+
+#. translators: %s the number of posts
+#: inc/plugins/class-form-records-post-type.php:67
+msgid "Read <span class=\"count\">(%s)</span>"
+msgid_plural "Read <span class=\"count\">(%s)</span>"
+msgstr[0] "Leer <span class=\"count\">(%s)</span>"
+msgstr[1] "Leer <span class=\"count\">(%s)</span>"
+
+#: inc/class-patterns.php:67 build/blocks/blocks.js:75
+msgid "FAQ"
+msgstr "FAQ"
+
+#. translators: %s - discount.
+#: inc/class-main.php:671
+msgid "Otter Pro: %s off this week"
+msgstr "Otter Pro: %s de descuento esta semana"
+
+#: inc/class-main.php:664
+msgid "Reactivate now"
+msgstr "Reactivar ahora"
+
+#: inc/class-main.php:663
+msgid "Your Otter Pro features are still here, just locked. Renew at a reduced rate this week."
+msgstr "Tus funciones de Otter Pro siguen aquí, solo están bloqueadas. Renueva a un precio reducido esta semana."
+
+#. translators: %s is the discount percentage.
+#: inc/class-main.php:662 inc/class-main.php:669
+msgid "BF Sale - %s off"
+msgstr "Oferta de Black Friday: %s de descuento"
+
+#. translators: %s is the discount percentage.
+#: inc/class-main.php:660 inc/class-main.php:667
+msgid "Black Friday Sale - %s off"
+msgstr "Oferta de Black Friday: %s de descuento"
+
+#: inc/class-main.php:657
+msgid "See your options"
+msgstr "Ver tus opciones"
+
+#. translators: %1$s - discount, %2$s - discount.
+#: inc/class-main.php:656
+msgid "Upgrade your Otter Pro plan: %1$s off this week. Already on the plan you need? Renew early and save up to %2$s."
+msgstr "Mejora tu plan Otter Pro: %1$s de descuento esta semana. ¿Ya tienes el plan que necesitas? Renueva antes de tiempo y ahorra hasta %2$s."
+
+#. translators: %s is the discount percentage.
+#: inc/class-main.php:654
+msgid "Black Friday Sale - up to %s off"
+msgstr "Oferta de Black Friday: hasta un %s de descuento"
+
+#: inc/class-main.php:641
+msgid "Advanced blocks, custom CSS, WooCommerce integration. Everything you need to build better pages, without code. Exclusively for existing Otter users."
+msgstr "Bloques avanzados, CSS personalizado, integración con WooCommerce. Todo lo que necesitas para diseñar mejores páginas sin código. Exclusivo para usuarios de Otter."
+
+#: build/blocks/content-slider/block.json
+msgctxt "block keyword"
+msgid "slides"
+msgstr "diapositivas"
+
+#: build/atomic-wind/blocks/text/block.json
+msgctxt "block keyword"
+msgid "paragraph"
+msgstr "párrafo"
+
+#: build/atomic-wind/blocks/text/block.json
+msgctxt "block description"
+msgid "A rich text element with tag selection."
+msgstr "Un elemento de texto enriquecido con selección de etiqueta."
+
+#: build/atomic-wind/blocks/text/block.json
+msgctxt "block title"
+msgid "Text"
+msgstr "Texto"
+
+#: build/atomic-wind/blocks/link/block.json
+msgctxt "block keyword"
+msgid "url"
+msgstr "url"
+
+#: build/atomic-wind/blocks/link/block.json
+msgctxt "block keyword"
+msgid "anchor"
+msgstr "ancla"
+
+#: build/atomic-wind/blocks/link/block.json
+msgctxt "block keyword"
+msgid "link"
+msgstr "enlace"
+
+#: build/atomic-wind/blocks/link/block.json
+msgctxt "block description"
+msgid "An anchor element with link picker and rich text."
+msgstr "Un elemento de anclaje con selector de enlaces y texto enriquecido."
+
+#: build/atomic-wind/blocks/link/block.json
+msgctxt "block title"
+msgid "Link"
+msgstr "Enlace"
+
+#: build/atomic-wind/blocks/image/block.json
+msgctxt "block keyword"
+msgid "photo"
+msgstr "foto"
+
+#: build/atomic-wind/blocks/image/block.json
+msgctxt "block keyword"
+msgid "img"
+msgstr "img"
+
+#: build/atomic-wind/blocks/image/block.json
+msgctxt "block keyword"
+msgid "image"
+msgstr "imagen"
+
+#: build/atomic-wind/blocks/image/block.json
+msgctxt "block description"
+msgid "A simple image element. Set via media library or direct URL."
+msgstr "Un elemento de imagen sencillo. Establécelo mediante la biblioteca de medios o una URL directa."
+
+#: build/atomic-wind/blocks/image/block.json
+msgctxt "block title"
+msgid "Image"
+msgstr "Imagen"
+
+#: build/atomic-wind/blocks/icon/block.json
+msgctxt "block keyword"
+msgid "lucide"
+msgstr "lucide"
+
+#: build/atomic-wind/blocks/icon/block.json
+msgctxt "block keyword"
+msgid "svg"
+msgstr "svg"
+
+#: build/atomic-wind/blocks/icon/block.json
+msgctxt "block description"
+msgid "An inline SVG icon from the Lucide icon set."
+msgstr "Un icono SVG integrado del conjunto de iconos Lucide."
+
+#: build/atomic-wind/blocks/box/block.json
+msgctxt "block keyword"
+msgid "summary"
+msgstr "resumen"
+
+#: build/atomic-wind/blocks/box/block.json
+msgctxt "block keyword"
+msgid "details"
+msgstr "detalles"
+
+#: build/atomic-wind/blocks/box/block.json
+msgctxt "block keyword"
+msgid "div"
+msgstr "div"
+
+#: build/atomic-wind/blocks/box/block.json
+msgctxt "block keyword"
+msgid "wrapper"
+msgstr "contenedor"
+
+#: build/atomic-wind/blocks/box/block.json
+msgctxt "block keyword"
+msgid "box"
+msgstr "caja"
+
+#: build/atomic-wind/blocks/box/block.json
+msgctxt "block description"
+msgid "A generic wrapper element with tag selection and inner blocks. Supports details and summary tags for native disclosure widgets."
+msgstr "Un elemento contenedor genérico con selección de etiquetas y bloques internos. Admite etiquetas de detalles y resumen para widgets desplegables nativos."
+
+#: build/atomic-wind/blocks/box/block.json
+msgctxt "block title"
+msgid "Box"
+msgstr "Caja"
+
+#: inc/plugins/class-options-settings.php:226 build/dashboard/index.js:7
+msgid "Enable Atomic Wind Blocks"
+msgstr "Activar bloques Atomic Wind"
+
+#: inc/plugins/class-atomic-wind-blocks.php:1426 build/atomic-wind/editor.js:22
+msgid "Atomic Wind"
+msgstr "Atomic Wind"
+
+#. translators: %d: number of minutes
+#: inc/plugins/class-atomic-wind-blocks.php:1227
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] "%d min de lectura"
+msgstr[1] "%d min de lectura"
+
+#: inc/render/class-sharing-icons-block.php:118
+msgid "Share on Threads"
+msgstr "Compartir en Threads"
+
+#: inc/render/class-sharing-icons-block.php:110
+msgid "Leave a comment"
+msgstr "Dejar un comentario"
+
+#: inc/render/class-sharing-icons-block.php:103
+msgid "Share on Mastodon"
+msgstr "Compartir en Mastodon"
+
+#: inc/render/class-sharing-icons-block.php:96
+msgid "Share on Telegram"
+msgstr "Compartir en Telegram"
+
+#: inc/render/class-sharing-icons-block.php:89
+msgid "Share via Email"
+msgstr "Compartir por correo"
+
+#: inc/render/class-sharing-icons-block.php:82
+msgid "Share on WhatsApp"
+msgstr "Compartir en WhatsApp"
+
+#: inc/render/class-sharing-icons-block.php:75
+msgid "Share on Reddit"
+msgstr "Compartir en Reddit"
+
+#: inc/render/class-sharing-icons-block.php:68
+msgid "Share on Tumblr"
+msgstr "Compartir en Tumblr"
+
+#: inc/render/class-sharing-icons-block.php:61
+msgid "Share on Pinterest"
+msgstr "Compartir en Pinterest"
+
+#: inc/render/class-sharing-icons-block.php:54
+msgid "Share on LinkedIn"
+msgstr "Compartir en LinkedIn"
+
+#: inc/render/class-sharing-icons-block.php:40
+msgid "Share on Facebook"
+msgstr "Compartir en Facebook"
+
+#: inc/class-registration.php:758
+msgid "Previous Slide"
+msgstr "Diapositiva anterior"
+
+#: inc/class-registration.php:757
+msgid "Next Slide"
+msgstr "Siguiente diapositiva"
+
+#: build/blocks/timeline/block.json
+msgctxt "block title"
+msgid "Timeline"
+msgstr "Cronología"
+
+#: build/blocks/timeline-item/block.json build/blocks/timeline/block.json
+msgctxt "block keyword"
+msgid "timeline"
+msgstr "cronología"
+
+#: build/blocks/timeline-item/block.json
+msgctxt "block title"
+msgid "Timeline Item"
+msgstr "Elemento de la cronología"
+
+#: build/blocks/modal/block.json
+msgctxt "block title"
+msgid "Modal"
+msgstr "Emergente"
+
+#: build/blocks/slider/block.json
+msgctxt "block title"
+msgid "Image Slider"
+msgstr "Carrusel de imágenes"
+
+#: build/blocks/modal/block.json
+msgctxt "block description"
+msgid "Display your content in beautiful Modal with many customization options. Powered by Otter."
+msgstr "Muestra tu contenido emergente de forma atractiva con numerosas opciones de personalización. Funciona con Otter."
+
+#: inc/class-patterns.php:68 build/blocks/blocks.js:75
+#: build/dashboard/index.js:10
+msgid "Timeline"
+msgstr "Cronología"
+
+#: build/blocks/form-stripe-field/block.json
+msgctxt "block description"
+msgid "A field used for adding Stripe products to the form."
+msgstr "Un campo utilizado para añadir productos de Stripe al formulario."
+
+#: build/blocks/form-stripe-field/block.json
+msgctxt "block title"
+msgid "Stripe Field"
+msgstr "Campo de Stripe"
+
+#: build/blocks/form-hidden-field/block.json
+msgctxt "block keyword"
+msgid "hidden"
+msgstr "oculto"
+
+#: build/blocks/form-hidden-field/block.json
+msgctxt "block keyword"
+msgid "metadata"
+msgstr "metadatos"
+
+#: build/blocks/form-hidden-field/block.json
+msgctxt "block description"
+msgid "A field used for adding extra metadata to the Form via URL params."
+msgstr "Un campo utilizado para añadir metadatos adicionales al formulario mediante parámetros de la URL."
+
+#: build/blocks/form-hidden-field/block.json
+msgctxt "block title"
+msgid "Hidden Field"
+msgstr "Campo oculto"
+
+#: build/blocks/content-generator/block.json
+msgctxt "block keyword"
+msgid "ai"
+msgstr "ia"
+
+#: build/blocks/content-generator/block.json
+msgctxt "block keyword"
+msgid "generator"
+msgstr "generador"
+
+#: build/blocks/content-generator/block.json
+#: build/blocks/content-slider/block.json
+msgctxt "block keyword"
+msgid "content"
+msgstr "contenido"
+
+#: build/blocks/content-generator/block.json
+msgctxt "block description"
+msgid "Generate content for your block with AI."
+msgstr "Genera contenido para tu bloque con la IA."
+
+#: inc/plugins/class-form-records-meta-box.php:168 build/blocks/blocks.js:58
+msgid "Invalid"
+msgstr "No válido"
+
+#: build/blocks/form-multiple-choice/block.json
+msgctxt "block keyword"
+msgid "multiple"
+msgstr "múltiple"
+
+#: build/blocks/form-multiple-choice/block.json
+msgctxt "block keyword"
+msgid "checkbox"
+msgstr "casilla de verificación"
+
+#: build/blocks/form-file/block.json
+msgctxt "block keyword"
+msgid "file"
+msgstr "archivo"
+
+#: build/blocks/form-multiple-choice/block.json
+msgctxt "block description"
+msgid "Display a checkbox, select, radio."
+msgstr "Muestra una casilla de verificación, campo de selección, campo único."
+
+#: build/blocks/form-multiple-choice/block.json
+msgctxt "block title"
+msgid "Form Multiple Choice Input"
+msgstr "Formulario con varias opciones"
+
+#: build/blocks/stripe-checkout/block.json
+msgctxt "block keyword"
+msgid "payment"
+msgstr "pago"
+
+#: build/blocks/stripe-checkout/block.json
+msgctxt "block keyword"
+msgid "checkout"
+msgstr "finalizar compra"
+
+#: build/blocks/stripe-checkout/block.json
+msgctxt "block title"
+msgid "Stripe Checkout"
+msgstr "Pago de Stripe"
+
+#: build/blocks/form-nonce/block.json
+msgctxt "block title"
+msgid "CSRF Protection"
+msgstr "Protección CSRF"
+
+#: inc/plugins/class-dashboard.php:170 build/dashboard/index.js:7
+msgid "Documentation"
+msgstr "Documentación"
+
+#: build/atomic-wind/blocks/text/block.json build/blocks/form-input/block.json
+msgctxt "block keyword"
+msgid "text"
+msgstr "texto"
+
+#: build/blocks/form-multiple-choice/block.json build/blocks/form/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr "formulario"
+
+#: build/blocks/advanced-heading/block.json
+msgctxt "block keyword"
+msgid "title"
+msgstr "título"
+
+#: build/atomic-wind/blocks/box/block.json
+#: build/blocks/advanced-columns/block.json
+msgctxt "block keyword"
+msgid "section"
+msgstr "sección"
+
+#: build/atomic-wind/blocks/box/block.json build/blocks/flip/block.json
+msgctxt "block keyword"
+msgid "container"
+msgstr "contenedor"
+
+#: build/blocks/posts-grid/block.json
+msgctxt "block keyword"
+msgid "posts"
+msgstr "entradas"
+
+#: build/blocks/button/block.json
+msgctxt "block title"
+msgid "Button"
+msgstr "Botón"
+
+#: build/blocks/timeline-item/block.json build/blocks/timeline/block.json
+msgctxt "block keyword"
+msgid "date"
+msgstr "fecha"
+
+#: build/blocks/timeline-item/block.json build/blocks/timeline/block.json
+msgctxt "block description"
+msgid "Organize your events in a timeline with the Timeline block. Powered by Otter."
+msgstr "Organiza tus eventos en una línea de tiempo con el bloque de línea de tiempo. Con la tecnología de Otter."
+
+#: build/blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "quotes"
+msgstr "citas"
+
+#: build/blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "testimonials"
+msgstr "testimonios"
+
+#: build/blocks/testimonials/block.json
+msgctxt "block description"
+msgid "Display kudos from customers and clients and display them on your website. Powered by Otter."
+msgstr "Muestra los elogios de clientes y usuarios y muéstralos en tu sitio web. Con la tecnología de Otter."
+
+#: build/blocks/testimonials/block.json
+msgctxt "block title"
+msgid "Testimonials"
+msgstr "Testimonios"
+
+#: build/blocks/tabs/block.json
+msgctxt "block keyword"
+msgid "tabs"
+msgstr "pestañas"
+
+#: build/blocks/tabs/block.json
+msgctxt "block title"
+msgid "Tabs"
+msgstr "Pestañas"
+
+#: build/blocks/tabs-item/block.json
+msgctxt "block keyword"
+msgid "item"
+msgstr "elemento"
+
+#: build/blocks/tabs-item/block.json
+msgctxt "block keyword"
+msgid "tab"
+msgstr "pestaña"
+
+#: build/blocks/tabs-item/block.json build/blocks/tabs/block.json
+msgctxt "block description"
+msgid "Organize and allow navigation between groups of content with Tabs block. Powered by Otter."
+msgstr "Organiza y permite la navegación entre grupos de contenido con el bloque de pestañas. Con la tecnología de Otter."
+
+#: build/blocks/tabs-item/block.json
+msgctxt "block title"
+msgid "Tab Item"
+msgstr "Elemento de pestaña"
+
+#: build/blocks/stripe-checkout/block.json
+msgctxt "block description"
+msgid "A Stripe Checkout to sell your products on your website without any hassle. Powered by Otter."
+msgstr "Un pago con Stripe para vender tus productos en tu sitio web sin complicaciones. Con la tecnología de Otter."
+
+#: build/blocks/content-slider/block.json build/blocks/slider/block.json
+msgctxt "block keyword"
+msgid "carousel"
+msgstr "carrusel"
+
+#: build/blocks/slider/block.json
+msgctxt "block keyword"
+msgid "gallery"
+msgstr "galería"
+
+#: build/blocks/content-slider/block.json build/blocks/slider/block.json
+msgctxt "block keyword"
+msgid "slider"
+msgstr "deslizador"
+
+#: build/blocks/slider/block.json
+msgctxt "block description"
+msgid "Minimal image slider to showcase beautiful images. Powered by Otter."
+msgstr "Deslizador de imágenes minimalista para mostrar imágenes bonitas. Con la tecnología de Otter."
+
+#: build/blocks/sharing-icons/block.json
+msgctxt "block style label"
+msgid "Icons Only"
+msgstr "Solo iconos"
+
+#: build/blocks/sharing-icons/block.json
+msgctxt "block style label"
+msgid "Regular"
+msgstr "Regular"
+
+#: build/blocks/sharing-icons/block.json
+msgctxt "block keyword"
+msgid "sharing"
+msgstr "compartir"
+
+#: build/blocks/sharing-icons/block.json
+msgctxt "block keyword"
+msgid "social media"
+msgstr "redes sociales"
+
+#: build/blocks/sharing-icons/block.json
+msgctxt "block description"
+msgid "Share buttons for your website visitors to share content on any social sharing service. Powered by Otter."
+msgstr "Botones de compartir para que los visitantes de tu sitio compartan contenido en cualquier servicio de redes sociales. Con la tecnología de Otter."
+
+#: build/blocks/sharing-icons/block.json
+msgctxt "block title"
+msgid "Sharing Icons"
+msgstr "Iconos para compartir"
+
+#: build/blocks/service/block.json
+msgctxt "block keyword"
+msgid "features"
+msgstr "características"
+
+#: build/blocks/service/block.json
+msgctxt "block keyword"
+msgid "services"
+msgstr "servicios"
+
+#: build/blocks/service/block.json
+msgctxt "block description"
+msgid "Use this Service block to showcase services your website offers. Powered by Otter."
+msgstr "Usa este bloque de servicio para mostrar los servicios que ofrece tu sitio web. Con la tecnología de Otter."
+
+#: build/blocks/service/block.json
+msgctxt "block title"
+msgid "Service"
+msgstr "Servicio"
+
+#: build/blocks/review/block.json
+msgctxt "block keyword"
+msgid "stars"
+msgstr "estrellas"
+
+#: build/blocks/review/block.json
+msgctxt "block keyword"
+msgid "review"
+msgstr "reseña"
+
+#: build/blocks/review/block.json
+msgctxt "block description"
+msgid "Turn your posts into smart reviews with ratings and generate leads with a performing review block. Powered by Otter."
+msgstr "Convierte tus entradas en reseñas inteligentes con valoraciones y genera clientes potenciales con un bloque de reseñas de alto rendimiento. Con la tecnología de Otter."
+
+#: build/blocks/review/block.json
+msgctxt "block title"
+msgid "Product Review"
+msgstr "Reseña de producto"
+
+#: build/blocks/progress-bar/block.json
+msgctxt "block keyword"
+msgid "skills"
+msgstr "habilidades"
+
+#: build/blocks/progress-bar/block.json
+msgctxt "block keyword"
+msgid "bar"
+msgstr "barra"
+
+#: build/blocks/progress-bar/block.json
+msgctxt "block description"
+msgid "Show your progress with a beautiful Progress Bar block. Powered by Otter."
+msgstr "Muestra tu progreso con un bonito bloque de barra de progreso. Con la tecnología de Otter."
+
+#: build/blocks/progress-bar/block.json
+msgctxt "block title"
+msgid "Progress Bar"
+msgstr "Barra de progreso"
+
+#: build/blocks/pricing/block.json
+msgctxt "block keyword"
+msgid "money"
+msgstr "dinero"
+
+#: build/blocks/pricing/block.json
+msgctxt "block keyword"
+msgid "table"
+msgstr "tabla"
+
+#: build/blocks/pricing/block.json
+msgctxt "block keyword"
+msgid "pricing"
+msgstr "precios"
+
+#: build/blocks/pricing/block.json
+msgctxt "block description"
+msgid "Pricing tables are a critical part in showcasing your services, prices and overall offerings. Powered by Otter."
+msgstr "Las tablas de precios son una parte fundamental para mostrar tus servicios, precios y ofertas en general. Con la tecnología de Otter."
+
+#: build/blocks/pricing/block.json
+msgctxt "block title"
+msgid "Pricing"
+msgstr "Precios"
+
+#: build/blocks/posts-grid/block.json
+msgctxt "block keyword"
+msgid "news"
+msgstr "noticias"
+
+#: build/blocks/posts-grid/block.json
+msgctxt "block keyword"
+msgid "grid"
+msgstr "cuadrícula"
+
+#: build/blocks/posts-grid/block.json
+msgctxt "block description"
+msgid "Display a list of your most recent posts in a beautiful layout. Powered by Otter."
+msgstr "Muestra una lista de tus entradas más recientes en un diseño atractivo. Con la tecnología de Otter."
+
+#: build/blocks/posts-grid/block.json
+msgctxt "block title"
+msgid "Posts"
+msgstr "Entradas"
+
+#: build/blocks/popup/block.json
+msgctxt "block keyword"
+msgid "popup"
+msgstr "ventana emergente"
+
+#: build/blocks/popup/block.json
+msgctxt "block description"
+msgid "Display your content in beautiful popup with many customization options. Powered by Otter."
+msgstr "Muestra tu contenido en una bonita ventana emergente con muchas opciones de personalización. Con la tecnología de Otter."
+
+#: build/blocks/popup/block.json
+msgctxt "block title"
+msgid "Popup"
+msgstr "Ventana emergente"
+
+#: build/blocks/plugin-cards/block.json
+msgctxt "block keyword"
+msgid "card"
+msgstr "tarjeta"
+
+#: build/blocks/plugin-cards/block.json
+msgctxt "block keyword"
+msgid "plugin"
+msgstr "plugin"
+
+#: build/blocks/plugin-cards/block.json
+msgctxt "block description"
+msgid "Plugin Card block lets you display plugins data in your blog posts. Powered by Otter."
+msgstr "El bloque de tarjeta de plugin te permite mostrar datos de plugins en tus entradas de blog. Con la tecnología de Otter."
+
+#: build/blocks/plugin-cards/block.json
+msgctxt "block title"
+msgid "Plugin Card"
+msgstr "Tarjeta de plugin"
+
+#: build/blocks/modal/block.json build/blocks/popup/block.json
+msgctxt "block keyword"
+msgid "lightbox"
+msgstr "lightbox"
+
+#: build/blocks/modal/block.json build/blocks/popup/block.json
+msgctxt "block keyword"
+msgid "modal"
+msgstr "modal"
+
+#: build/blocks/lottie/block.json
+msgctxt "block keyword"
+msgid "lottie"
+msgstr "lottie"
+
+#: build/blocks/lottie/block.json build/blocks/tabs-item/block.json
+#: build/blocks/tabs/block.json build/blocks/timeline-item/block.json
+#: build/blocks/timeline/block.json
+msgctxt "block keyword"
+msgid "media"
+msgstr "multimedia"
+
+#: build/blocks/lottie/block.json
+msgctxt "block description"
+msgid "Add Lottie animations to your WordPress. Powered by Otter."
+msgstr "Añade animaciones Lottie a tu WordPress. Con la tecnología de Otter."
+
+#: build/blocks/lottie/block.json
+msgctxt "block title"
+msgid "Lottie Animation"
+msgstr "Animación Lottie"
+
+#: build/blocks/leaflet-map/block.json
+msgctxt "block keyword"
+msgid "location"
+msgstr "ubicación"
+
+#: build/blocks/leaflet-map/block.json
+msgctxt "block keyword"
+msgid "opeenstreetmap"
+msgstr "openstreetmap"
+
+#: build/blocks/leaflet-map/block.json
+msgctxt "block description"
+msgid "Display Open Street Maps on your website with Maps block. Powered by Otter."
+msgstr "Muestra mapas de Open Street Maps en tu sitio web con el bloque de mapas. Con la tecnología de Otter."
+
+#: build/blocks/leaflet-map/block.json
+msgctxt "block title"
+msgid "Maps"
+msgstr "Mapas"
+
+#: build/blocks/icon-list/block.json
+msgctxt "block description"
+msgid "Display an icon list in a beautiful layout. Powered by Otter."
+msgstr "Muestra una lista de iconos en un diseño atractivo. Con la tecnología de Otter."
+
+#: build/blocks/icon-list/block.json
+msgctxt "block title"
+msgid "Icon List"
+msgstr "Lista de iconos"
+
+#: build/blocks/icon-list-item/block.json build/blocks/icon-list/block.json
+msgctxt "block keyword"
+msgid "items"
+msgstr "elementos"
+
+#: build/blocks/icon-list-item/block.json build/blocks/icon-list/block.json
+msgctxt "block keyword"
+msgid "list"
+msgstr "lista"
+
+#: build/atomic-wind/blocks/icon/block.json
+#: build/blocks/icon-list-item/block.json build/blocks/icon-list/block.json
+#: build/blocks/service/block.json
+msgctxt "block keyword"
+msgid "icon"
+msgstr "icono"
+
+#: build/blocks/icon-list-item/block.json
+msgctxt "block description"
+msgid "Display an item for the icon list. Powered by Otter."
+msgstr "Muestra un elemento para la lista de iconos. Con la tecnología de Otter."
+
+#: build/blocks/icon-list-item/block.json
+msgctxt "block title"
+msgid "Icon List Item"
+msgstr "Elemento de lista de iconos"
+
+#: build/blocks/google-map/block.json build/blocks/plugin-cards/block.json
+msgctxt "block keyword"
+msgid "orbitfox"
+msgstr "orbitfox"
+
+#: build/blocks/google-map/block.json
+msgctxt "block keyword"
+msgid "google"
+msgstr "google"
+
+#: build/blocks/google-map/block.json build/blocks/leaflet-map/block.json
+msgctxt "block keyword"
+msgid "map"
+msgstr "mapa"
+
+#: build/blocks/google-map/block.json
+msgctxt "block description"
+msgid "Display Google Maps on your website with Google Map block. Powered by Otter."
+msgstr "Muestra Google Maps en tu sitio web con el bloque de Google Maps. Con la tecnología de Otter."
+
+#: build/blocks/google-map/block.json
+msgctxt "block title"
+msgid "Google Maps"
+msgstr "Google Maps"
+
+#: build/blocks/form/block.json build/blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "business"
+msgstr "negocio"
+
+#: build/blocks/form/block.json
+msgctxt "block description"
+msgid "Display a form for your clients. Powered by Otter."
+msgstr "Muestra un formulario para tus clientes. Con la tecnología de Otter."
+
+#: build/blocks/form/block.json
+msgctxt "block title"
+msgid "Form"
+msgstr "Formulario"
+
+#: build/blocks/form-textarea/block.json
+msgctxt "block keyword"
+msgid "message"
+msgstr "mensaje"
+
+#: build/blocks/form-textarea/block.json
+msgctxt "block keyword"
+msgid "textarea"
+msgstr "área de texto"
+
+#: build/blocks/form-textarea/block.json
+msgctxt "block title"
+msgid "Textarea Field"
+msgstr "Campo de área de texto"
+
+#: build/blocks/form-stripe-field/block.json
+#: build/blocks/stripe-checkout/block.json
+msgctxt "block keyword"
+msgid "stripe"
+msgstr "stripe"
+
+#: build/blocks/form-stripe-field/block.json build/blocks/review/block.json
+msgctxt "block keyword"
+msgid "product"
+msgstr "producto"
+
+#: build/blocks/form-nonce/block.json
+msgctxt "block keyword"
+msgid "csrf"
+msgstr "csrf"
+
+#: build/blocks/form-nonce/block.json
+msgctxt "block keyword"
+msgid "protection"
+msgstr "protección"
+
+#: build/blocks/form-nonce/block.json
+msgctxt "block description"
+msgid "Protect the form from CSRF."
+msgstr "Protege el formulario contra CSRF."
+
+#: build/blocks/form-multiple-choice/block.json
+msgctxt "block keyword"
+msgid "radio"
+msgstr "radio"
+
+#: build/blocks/form-multiple-choice/block.json build/blocks/tabs/block.json
+msgctxt "block keyword"
+msgid "select"
+msgstr "seleccionar"
+
+#: build/blocks/form-input/block.json build/blocks/form/block.json
+msgctxt "block keyword"
+msgid "email"
+msgstr "correo"
+
+#: build/blocks/form-input/block.json
+msgctxt "block title"
+msgid "Text Field"
+msgstr "Campo de texto"
+
+#: build/blocks/form-file/block.json build/blocks/form-hidden-field/block.json
+#: build/blocks/form-nonce/block.json build/blocks/form-stripe-field/block.json
+msgctxt "block keyword"
+msgid "field"
+msgstr "campo"
+
+#: build/blocks/form-file/block.json build/blocks/form-input/block.json
+#: build/blocks/form-textarea/block.json
+msgctxt "block keyword"
+msgid "input"
+msgstr "entrada"
+
+#: build/blocks/form-file/block.json build/blocks/form-input/block.json
+#: build/blocks/form-textarea/block.json
+msgctxt "block description"
+msgid "Display a contact form for your clients."
+msgstr "Muestra un formulario de contacto para tus clientes."
+
+#: build/blocks/form-file/block.json
+msgctxt "block title"
+msgid "File Field"
+msgstr "Campo de archivo"
+
+#: build/blocks/font-awesome-icons/block.json
+#: build/blocks/sharing-icons/block.json
+msgctxt "block keyword"
+msgid "icons"
+msgstr "iconos"
+
+#: build/blocks/font-awesome-icons/block.json
+msgctxt "block keyword"
+msgid "dashicons"
+msgstr "dashicons"
+
+#: build/blocks/font-awesome-icons/block.json
+msgctxt "block keyword"
+msgid "font awesome"
+msgstr "font awesome"
+
+#: build/blocks/font-awesome-icons/block.json
+msgctxt "block description"
+msgid "Add icons from Font Awesome or ThemeIsle Icons library to your website. Powered by Otter."
+msgstr "Añade iconos de Font Awesome o de la biblioteca de iconos de ThemeIsle a tu sitio web. Con la tecnología de Otter."
+
+#: build/atomic-wind/blocks/icon/block.json
+#: build/blocks/font-awesome-icons/block.json
+msgctxt "block title"
+msgid "Icon"
+msgstr "Icono"
+
+#: build/blocks/flip/block.json build/blocks/lottie/block.json
+msgctxt "block keyword"
+msgid "animation"
+msgstr "animación"
+
+#: build/blocks/flip/block.json
+msgctxt "block keyword"
+msgid "flip card"
+msgstr "tarjeta giratoria"
+
+#: build/blocks/flip/block.json
+msgctxt "block description"
+msgid "Make a card with a flip effect. Powered by Otter."
+msgstr "Crea una tarjeta con efecto de giro. Con la tecnología de Otter."
+
+#: build/blocks/flip/block.json
+msgctxt "block title"
+msgid "Flip Card"
+msgstr "Tarjeta giratoria"
+
+#: build/blocks/countdown/block.json
+msgctxt "block keyword"
+msgid "time"
+msgstr "hora"
+
+#: build/blocks/countdown/block.json
+msgctxt "block keyword"
+msgid "countdown"
+msgstr "cuenta atrás"
+
+#: build/blocks/countdown/block.json
+msgctxt "block description"
+msgid "Set a countdown for a date. Powered by Otter."
+msgstr "Establece una cuenta atrás para una fecha. Con la tecnología de Otter."
+
+#: build/blocks/countdown/block.json
+msgctxt "block title"
+msgid "Countdown"
+msgstr "Cuenta atrás"
+
+#: build/blocks/circle-counter/block.json build/blocks/countdown/block.json
+msgctxt "block keyword"
+msgid "counter"
+msgstr "contador"
+
+#: build/blocks/circle-counter/block.json
+msgctxt "block keyword"
+msgid "circle"
+msgstr "círculo"
+
+#: build/blocks/circle-counter/block.json build/blocks/progress-bar/block.json
+msgctxt "block keyword"
+msgid "progress"
+msgstr "progreso"
+
+#: build/blocks/circle-counter/block.json
+msgctxt "block description"
+msgid "Show your progress with a beautiful Circle Counter block. Powered by Otter."
+msgstr "Muestra tu progreso con un bonito bloque de contador circular. Con la tecnología de Otter."
+
+#: build/blocks/circle-counter/block.json
+msgctxt "block title"
+msgid "Circle Counter"
+msgstr "Contador circular"
+
+#: build/blocks/button-group/block.json build/blocks/button/block.json
+msgctxt "block keyword"
+msgid "button group"
+msgstr "grupo de botones"
+
+#: build/blocks/button-group/block.json build/blocks/button/block.json
+msgctxt "block keyword"
+msgid "buttons"
+msgstr "botones"
+
+#: build/blocks/button-group/block.json build/blocks/button/block.json
+msgctxt "block keyword"
+msgid "button"
+msgstr "botón"
+
+#: build/blocks/button-group/block.json build/blocks/button/block.json
+msgctxt "block description"
+msgid "Prompt visitors to take action with a button group. Powered by Otter."
+msgstr "Anima a los visitantes a actuar con un grupo de botones. Con la tecnología de Otter."
+
+#: build/blocks/button-group/block.json
+msgctxt "block title"
+msgid "Button Group"
+msgstr "Grupo de botones"
+
+#: build/blocks/advanced-heading/block.json
+msgctxt "block keyword"
+msgid "advanced heading"
+msgstr "título avanzado"
+
+#: build/atomic-wind/blocks/text/block.json
+#: build/blocks/advanced-heading/block.json
+msgctxt "block keyword"
+msgid "heading"
+msgstr "título"
+
+#: build/blocks/advanced-heading/block.json
+msgctxt "block description"
+msgid "Advanced Heading gives a spin to editor's Heading block with much needed customization options. Powered by Otter."
+msgstr "Advanced Heading da un giro al bloque de título del editor con opciones de personalización muy necesarias. Con la tecnología de Otter."
+
+#: build/blocks/advanced-heading/block.json
+msgctxt "block title"
+msgid "Advanced Heading"
+msgstr "Título avanzado"
+
+#: build/blocks/advanced-columns/block.json
+#: build/blocks/content-generator/block.json
+msgctxt "block keyword"
+msgid "layout"
+msgstr "diseño"
+
+#: build/blocks/advanced-columns/block.json
+msgctxt "block keyword"
+msgid "advanced columns"
+msgstr "columnas avanzadas"
+
+#: build/blocks/advanced-columns/block.json
+msgctxt "block description"
+msgid "Add a Section block that displays content in multiple columns, then add whatever content blocks you’d like. Powered by Otter."
+msgstr "Añade un bloque de sección que muestra contenido en varias columnas, luego añade los bloques de contenido que quieras. Con la tecnología de Otter."
+
+#: build/blocks/advanced-columns/block.json
+msgctxt "block title"
+msgid "Section"
+msgstr "Sección"
+
+#: build/blocks/advanced-column/block.json
+msgctxt "block description"
+msgid "A single column within a Section block. Powered by Otter."
+msgstr "Una columna individual dentro de un bloque de sección. Con la tecnología de Otter."
+
+#: build/blocks/advanced-column/block.json
+msgctxt "block title"
+msgid "Section Column"
+msgstr "Columna de sección"
+
+#: build/blocks/accordion/block.json
+msgctxt "block title"
+msgid "Accordion"
+msgstr "Acordeón"
+
+#: build/blocks/accordion-item/block.json build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "faq"
+msgstr "faq"
+
+#: build/blocks/accordion-item/block.json build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "collapse"
+msgstr "plegar"
+
+#: build/blocks/accordion-item/block.json build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "accordions"
+msgstr "acordeones"
+
+#: build/blocks/accordion-item/block.json build/blocks/accordion/block.json
+msgctxt "block description"
+msgid "Vertically collapsing accordions perfect for displaying your FAQs. Powered by Otter."
+msgstr "Acordeones que se pliegan verticalmente, perfectos para mostrar tus preguntas frecuentes. Con la tecnología de Otter."
+
+#: build/blocks/accordion-item/block.json
+msgctxt "block title"
+msgid "Accordion Item"
+msgstr "Elemento de acordeón"
+
+#: build/blocks/about-author/block.json
+msgctxt "block keyword"
+msgid "profile"
+msgstr "perfil"
+
+#: build/blocks/about-author/block.json
+msgctxt "block keyword"
+msgid "author"
+msgstr "autor"
+
+#: build/blocks/about-author/block.json
+msgctxt "block keyword"
+msgid "about"
+msgstr "acerca de"
+
+#: build/blocks/about-author/block.json
+msgctxt "block description"
+msgid "About Author block is the easiest way to add a author bio below your posts. Powered by Otter."
+msgstr "El bloque de sobre el autor es la forma más fácil de añadir una biografía del autor debajo de tus entradas. Con la tecnología de Otter."
+
+#: build/blocks/about-author/block.json
+msgctxt "block title"
+msgid "About Author"
+msgstr "Sobre el autor"
+
+#: inc/plugins/class-form-records-export.php:132
+#: inc/plugins/class-form-submissions.php:220
+#: build/blocks/chunk-dynamic-content.js:1
+msgid "Post URL"
+msgstr "URL de la entrada"
+
+#: inc/plugins/class-form-submissions.php:224
+#: build/blocks/chunk-dynamic-content.js:1
+msgid "Post ID"
+msgstr "ID de la entrada"
+
+#: inc/plugins/class-form-records-list-table.php:149
+#: inc/plugins/class-form-records-meta-box.php:409 build/blocks/blocks.js:72
+msgid "View"
+msgstr "Ver"
+
+#: inc/server/class-template-cloud-server.php:278
+msgid "Failed to sync sources"
+msgstr "Error al sincronizar fuentes"
+
+#: inc/server/class-template-cloud-server.php:267
+msgid "No sources to sync"
+msgstr "No hay fuentes que sincronizar"
+
+#: inc/server/class-template-cloud-server.php:238
+msgid "Failed to remove the source"
+msgstr "Fallo al eliminar la fuente"
+
+#: inc/server/class-template-cloud-server.php:218
+msgid "Key is missing"
+msgstr "Falta la clave"
+
+#: inc/server/class-template-cloud-server.php:190
+msgid "Failed to save the source"
+msgstr "Fallo al guardar la fuente"
+
+#: inc/server/class-template-cloud-server.php:173
+msgid "Source already exists"
+msgstr "La fuente ya existe"
+
+#: inc/server/class-template-cloud-server.php:161
+msgid "Invalid source. Please make sure you have the correct key and url."
+msgstr "Fuente no válida. Por favor, asegúrate de que tienes la clave y la URL correctas."
+
+#: inc/server/class-template-cloud-server.php:150
+msgid "Invalid request. Please provide a key and url."
+msgstr "Solicitud no válida. Por favor, proporciona una clave y una URL."
+
+#. translators: %s: source name
+#: inc/plugins/class-template-cloud.php:312
+msgid "Error with %s: No patterns found"
+msgstr "Error con %s: No se han encontrado patrones"
+
+#. translators: %s: source name
+#: inc/plugins/class-template-cloud.php:302
+msgid "Error with %s: Invalid response"
+msgstr "Error con %s: Respuesta no válida"
+
+#. translators: %s: source name
+#: inc/plugins/class-template-cloud.php:290
+msgid "Error with %s: Empty response"
+msgstr "Error con %s: Respuesta vacía"
+
+#. translators: 1: source name, 2: response code
+#: inc/plugins/class-template-cloud.php:277
+msgid "Error with %1$s: Invalid response code %2$s"
+msgstr "Error con %1$s: Código de respuesta no válido %2$s"
+
+#. translators: 1: source name, 2: error message
+#: inc/plugins/class-template-cloud.php:264
+msgid "Error with %1$s: %2$s"
+msgstr "Error con %1$s: %2$s"
+
+#. translators: %s is the URL of the site from which the email was sent.
+#: inc/integrations/class-form-email.php:304
+msgid "Location: %s"
+msgstr "Ubicación: %s"
+
+#: inc/class-blocks-animation.php:320
+msgid "Enhanced Animations"
+msgstr "Animaciones mejoradas"
+
+#: inc/integrations/class-form-email.php:305
+msgid "link"
+msgstr "enlace"
+
+#: inc/class-blocks-animation.php:319
+msgid "Add-on Blocks"
+msgstr "Bloques de extensión"
+
+#: inc/server/class-prompt-server.php:131
+#: inc/server/class-prompt-server.php:187
+msgid "API key saved."
+msgstr "Clave API guardada."
+
+#: inc/server/class-prompt-server.php:124
+msgid "API key is missing."
+msgstr "Falta la clave API."
+
+#: inc/render/class-stripe-checkout-block.php:109
+msgid "An error occurred! Could not create the request!"
+msgstr "¡Se ha producido un error! ¡No se ha podido crear la solicitud!"
+
+#: inc/render/class-stripe-checkout-block.php:72
+#: inc/render/class-stripe-checkout-block.php:79
+msgid "An error occurred! Could not retrieve the product information!"
+msgstr "¡Se ha producido un error! ¡No se ha podido recuperar la información del producto!"
+
+#: inc/render/class-sharing-icons-block.php:117 build/blocks/blocks.js:71
+msgid "Threads"
+msgstr "Threads"
+
+#: inc/render/class-sharing-icons-block.php:47
+msgid "Share on X"
+msgstr "Compartir en X"
+
+#: otter-blocks.php:86
+msgid "Otter Blocks Pro"
+msgstr "Otter Blocks Pro"
+
+#: inc/server/class-otter-openai-backend.php:171
+#: inc/server/class-prompt-server.php:180
+msgid "An error occurred while processing the request."
+msgstr "Ha habido un error al procesar la solicitud."
+
+#: inc/class-patterns.php:59 build/blocks/blocks.js:75
+#: build/patterns-library/index.js:4
+msgid "Hero"
+msgstr "Sección destacada"
+
+#: inc/class-patterns.php:88 build/patterns-library/index.js:1
+msgid "Pages"
+msgstr "Páginas"
+
+#: inc/class-patterns.php:73
+msgid "Forms"
+msgstr "Formularios"
+
+#: inc/class-patterns.php:62 build/blocks/blocks.js:75
+msgid "Features"
+msgstr "Características"
+
+#. translators: %s: Otter Blocks
+#: inc/class-blocks-animation.php:336
+msgid "Activate %s"
+msgstr "Activar %s"
+
+#. translators: %s: Otter Blocks
+#: inc/class-blocks-animation.php:338
+msgid "Install & Activate %s"
+msgstr "Instalar y activar %s"
+
+#: inc/class-blocks-animation.php:302 build/dashboard/index.js:10
+msgid "Installing"
+msgstr "Instalando"
+
+#: inc/class-blocks-animation.php:301 build/dashboard/index.js:10
+msgid "Activating"
+msgstr "Activando"
+
+#: inc/class-main.php:392
+msgid "Sorry, you are not allowed to upload files."
+msgstr "Lo siento, no tienes permisos para subir archivos."
+
+#: inc/class-main.php:401
+msgid "Sorry, this file couldn't be sanitized so for security reasons wasn't uploaded"
+msgstr "Lo siento, este archivo no se ha podido sanear, por lo que, por razones de seguridad, no se ha subido."
+
+#: inc/server/class-fse-onboarding-server.php:84
+msgid "Missing templates"
+msgstr "Faltan plantillas"
+
+#: inc/plugins/class-fse-onboarding.php:51
+#: inc/plugins/class-fse-onboarding.php:52
+msgid "Theme Setup"
+msgstr "Configuración del tema"
+
+#: inc/plugins/class-options-settings.php:947
+msgid "Enable FSE Onboarding Wizard."
+msgstr "Activa el Asistente de Incorporación FSE."
+
+#: inc/plugins/class-dashboard.php:737 inc/plugins/class-dashboard.php:765
+msgid "Export"
+msgstr "Exportar"
+
+#: inc/render/class-posts-grid-block.php:429 build/blocks/blocks.js:64
+msgid "Prev"
+msgstr "Ant"
+
+#: inc/plugins/class-options-settings.php:926
+msgid "The disabled blocks that will no longer be shown in Inserter."
+msgstr "Los bloques desactivados que ya no se mostrarán en el Insertor."
+
+#: inc/plugins/class-limited-offers.php:156
+msgid "Invalid nonce! Refresh the page and try again."
+msgstr "¡Nonce no válido! Recarga tu página e inténtalo de nuevo."
+
+#: inc/plugins/class-dashboard.php:1153
+msgid "Unread"
+msgstr "No leído"
+
+#: inc/plugins/class-dashboard.php:1152
+msgid "Read"
+msgstr "Leído"
+
+#: inc/plugins/class-dashboard.php:1151 build/atomic-wind/editor.js:22
+msgid "All"
+msgstr "Todos"
+
+#: inc/plugins/class-dashboard.php:1141 inc/plugins/class-dashboard.php:1143
+msgid "Total Entries"
+msgstr "Entradas totales"
+
+#: inc/plugins/class-dashboard.php:997
+msgid "No title"
+msgstr "Sin título"
+
+#: inc/plugins/class-dashboard.php:995 inc/plugins/class-dashboard.php:1177
+msgid "Submission"
+msgstr "Envío"
+
+#: inc/server/class-prompt-server.php:348
+msgid "Invalid data from central server. Please try again in"
+msgstr "Datos no válidos del servidor central. Por favor, inténtalo de nuevo en"
+
+#: inc/server/class-prompt-server.php:318
+#: inc/server/class-prompt-server.php:348
+msgid "minutes."
+msgstr "minutos."
+
+#: inc/server/class-prompt-server.php:318
+msgid "Timeout is active. Please try again in"
+msgstr "El tiempo de espera está activo. Vuelve a intentarlo en"
+
+#: inc/server/class-prompt-server.php:293
+msgid "Something went wrong when preparing the data for this feature."
+msgstr "Algo salió mal al preparar los datos para esta función."
+
+#: inc/server/class-otter-openai-backend.php:152
+#: inc/server/class-prompt-server.php:173
+msgid "Could not parse the response from OpenAI. Try again."
+msgstr "No se ha podido analizar la respuesta de OpenAI. Vuelve a intentarlo."
+
+#: inc/plugins/class-options-settings.php:822
+msgid "Usage of Otter AI features."
+msgstr "Uso de las funciones de Otter AI."
+
+#: inc/plugins/class-options-settings.php:810
+msgid "The OpenAI API Key required for usage of Otter AI features."
+msgstr "La clave API OpenAI necesaria para utilizar las funciones de Otter AI."
+
+#: inc/plugins/class-options-settings.php:737
+msgid "Otter Registered Webhooks."
+msgstr "Webhooks registrados en Otter."
+
+#: inc/plugins/class-dashboard.php:1195
+msgid "Manage all Submissions"
+msgstr "Gestionar todos los envíos"
+
+#: inc/plugins/class-dashboard.php:1172
+msgid "Your submission will appear here."
+msgstr "Tu envío aparecerá aquí."
+
+#: inc/plugins/class-dashboard.php:882
+msgid "Otter Blocks - Form Submissions"
+msgstr "Otter Blocks - Envíos de formulario"
+
+#: inc/integrations/api/form-response-data.php:405
+msgid "The payment has been processed. You will be contacted by the support team."
+msgstr "El pago ha sido procesado. El equipo de asistencia se pondrá en contacto contigo."
+
+#: inc/integrations/api/form-response-data.php:404
+msgid "The metadata submission record was not found."
+msgstr "No se ha encontrado el registro de envío de metadatos."
+
+#: inc/integrations/api/form-response-data.php:403
+msgid "The payment was not completed."
+msgstr "El pago no se completó."
+
+#: inc/integrations/api/form-response-data.php:402
+msgid "The Stripe Checkout session was not found."
+msgstr "No se ha encontrado la sesión de Stripe Checkout."
+
+#: inc/integrations/api/form-response-data.php:401
+msgid "The Stripe Checkout session could not be created."
+msgstr "No se ha podido crear la sesión de Stripe Checkout."
+
+#: inc/integrations/api/form-response-data.php:399
+msgid "The form dump data is missing."
+msgstr "Faltan los datos del volcado del formulario."
+
+#: inc/integrations/api/form-response-data.php:398
+msgid "The webhook could not be triggered."
+msgstr "No se ha podido activar el webhook."
+
+#: inc/integrations/api/form-response-data.php:397
+msgid "The request is malformed."
+msgstr "La petición está mal formada."
+
+#: inc/class-registration.php:681
+msgid "Confirming submission"
+msgstr "Confirmación de envío"
+
+#: inc/render/class-sharing-icons-block.php:109
+msgid "Comments"
+msgstr "Comentarios"
+
+#: inc/render/class-sharing-icons-block.php:102 build/blocks/blocks.js:71
+msgid "Mastodon"
+msgstr "Mastodon"
+
+#: inc/render/class-sharing-icons-block.php:95 build/blocks/blocks.js:71
+msgid "Telegram"
+msgstr "Telégram"
+
+#: inc/render/class-sharing-icons-block.php:81 build/blocks/blocks.js:71
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: inc/plugins/class-dashboard.php:732
+#: inc/plugins/class-form-records-post-type.php:37
+#: inc/plugins/class-form-records-post-type.php:40
+msgid "Form Submissions"
+msgstr "Envíos de formularios"
+
+#: inc/plugins/class-form-records-meta-box.php:46
+#: inc/plugins/class-form-records-meta-box.php:47
+msgid "Submissions"
+msgstr "Envíos"
+
+#: inc/server/class-form-server.php:564
+msgid "Some hook is corrupting the Form processing pipeline."
+msgstr "Algún gancho está corrompiendo la cadena de procesamiento del Formulario."
+
+#: inc/server/class-form-server.php:396 inc/server/class-form-server.php:399
+msgid "The form data class is not valid after performing provider actions! Some hook is corrupting the data."
+msgstr "¡La clase de datos del formulario no es válida después de realizar acciones del proveedor! Algún gancho está corrompiendo los datos."
+
+#: inc/render/class-form-multiple-choice.php:40
+msgid "Select option"
+msgstr "Seleccionar opción"
+
+#: inc/plugins/class-options-settings.php:599
+msgid "Form Fields used in the Form block."
+msgstr "Campos de formulario utilizados en el bloque Formulario."
+
+#: inc/integrations/class-form-email.php:264
+msgid "Warnings: "
+msgstr "Advertencias: "
+
+#: inc/integrations/class-form-email.php:240
+msgid "No warning found."
+msgstr "No se ha encontrado ninguna advertencia."
+
+#: inc/integrations/class-form-email.php:234
+msgid "Status Report "
+msgstr "Informe de estado "
+
+#: inc/integrations/class-form-email.php:232
+msgid "No error found."
+msgstr "No se ha encontrado ningún error."
+
+#: inc/integrations/class-form-email.php:153
+msgid "Files loaded to media library"
+msgstr "Archivos cargados a la biblioteca de medios"
+
+#: inc/integrations/api/form-response-data.php:396
+msgid "The file data is missing."
+msgstr "Faltan los datos del archivo."
+
+#: inc/integrations/api/form-response-data.php:393
+msgid "The email from Autoresponder could not be sent."
+msgstr "No se ha podido enviar el correo electrónico de Autoresponder."
+
+#: inc/integrations/api/form-response-data.php:392
+msgid "The email field is missing from the Form Block with Autoresponder activated."
+msgstr "Falta el campo de correo electrónico en el bloque de Formulario con la Autorespuesta activada."
+
+#: inc/integrations/api/form-response-data.php:391
+msgid "The file size exceed the limit."
+msgstr "El tamaño del archivo supera el límite."
+
+#: inc/integrations/api/form-response-data.php:390
+msgid "The number of files is too large."
+msgstr "El número de archivos es demasiado grande."
+
+#: inc/integrations/api/form-response-data.php:389
+msgid "The file type is not allowed."
+msgstr "El tipo de archivo no está permitido."
+
+#: inc/integrations/api/form-response-data.php:388
+msgid "The file type is not allowed by host provider."
+msgstr "El tipo de archivo no está permitido por el proveedor de alojamiento."
+
+#: inc/integrations/api/form-response-data.php:387
+msgid "The Otter Form Block service credentials are invalid."
+msgstr "Las credenciales del servicio Otter From Block no son válidas."
+
+#: inc/integrations/api/form-response-data.php:386
+msgid "The files could not be uploaded."
+msgstr "No se han podido cargar los archivos."
+
+#: inc/integrations/api/form-response-data.php:385
+msgid "The files metadata is invalid."
+msgstr "Los metadatos del archivo no son válidos."
+
+#: inc/integrations/api/form-response-data.php:381
+msgid "The user with this email was already registered."
+msgstr "El usuario con este correo electrónico ya estaba registrado."
+
+#: inc/integrations/api/form-response-data.php:369
+msgid "The File Field is not registered. Please check the field in Editor."
+msgstr "El campo Archivo no está registrado. Comprueba el campo en el Editor."
+
+#: inc/class-registration.php:680
+msgid "Invalid files type. The submitted files could not be processed."
+msgstr "Tipo de archivos no válido. No se han podido procesar los archivos enviados."
+
+#: inc/class-registration.php:679
+msgid "File size is to big. The limit is: "
+msgstr "El tamaño del archivo es demasiado grande. El límite es: "
+
+#: inc/class-registration.php:678
+msgid "Too many files loaded. Maximum is: "
+msgstr "Se han cargado demasiados archivos. El máximo es: "
+
+#: inc/render/class-stripe-checkout-block.php:273
+msgid "Error message: "
+msgstr "Mensaje de error: "
+
+#: inc/render/class-stripe-checkout-block.php:170
+msgid "An error occurred! Could not retrieve the price of the product!"
+msgstr "¡Se ha producido un error! ¡No se ha podido recuperar el precio del producto!"
+
+#: inc/render/class-stripe-checkout-block.php:154
+msgid "An error occurred! Could not retrieve product information!"
+msgstr "¡Se ha producido un error! ¡No se ha podido recuperar la información del producto!"
+
+#: inc/integrations/api/form-response-data.php:384
+msgid "Failed to validate the data. Please wait 5 seconds and try again."
+msgstr "No se han podido validar los datos. Espera 5 segundos y vuelve a intentarlo."
+
+#: inc/plugins/class-options-settings.php:171 build/dashboard/index.js:7
+msgid "Easily differentiate between dynamic and normal text in the editor."
+msgstr "Diferencia fácilmente entre texto dinámico y normal en el editor."
+
+#: inc/integrations/api/form-response-data.php:382
+msgid "The email address is invalid."
+msgstr "La dirección de correo electrónico no es válida."
+
+#: inc/integrations/api/form-response-data.php:383
+msgid "The email was already registered."
+msgstr "El correo electrónico ya estaba registrado."
+
+#: inc/integrations/api/form-response-data.php:380
+msgid "The API key format is invalid."
+msgstr "El formato de la clave de API no es válido."
+
+#: inc/integrations/api/form-response-data.php:378
+msgid "The captcha token is invalid."
+msgstr "El token del reCaptcha no es válido."
+
+#: inc/integrations/api/form-response-data.php:377
+msgid "API Key is missing."
+msgstr "Falta la clave de API."
+
+#: inc/integrations/api/form-response-data.php:376
+msgid "API Key is missing from settings."
+msgstr "La clave de API falta en los ajustes."
+
+#: inc/integrations/api/form-response-data.php:374
+msgid "Error received from service when subscribing the user."
+msgstr "Se ha recibido un error del servicio al suscribirse el usuario."
+
+#: inc/integrations/api/form-response-data.php:373
+msgid "The 3rd-party service is not registered."
+msgstr "El servicio de terceros no está registrado."
+
+#: inc/integrations/api/form-response-data.php:371
+msgid "Email could not be sent. Might be an error with the service."
+msgstr "No se ha podido enviar el correo electrónico. Puede ser un error del servicio."
+
+#: inc/integrations/api/form-response-data.php:370
+msgid "Form ID is invalid."
+msgstr "La ID de formulario no es válida."
+
+#: inc/integrations/api/form-response-data.php:372
+msgid "Invalid service authentication credentials."
+msgstr "Credenciales de identificación del servicio no válidas."
+
+#: inc/integrations/api/form-response-data.php:367
+msgid "Missing email field in form."
+msgstr "Falta el campo de correo electrónico en el formulario."
+
+#: inc/integrations/api/form-response-data.php:366
+msgid "Captcha token is missing."
+msgstr "Falta el token del captcha."
+
+#: inc/integrations/api/form-response-data.php:365
+msgid "Essential data is missing: invalid Form id or protection."
+msgstr "Faltan datos esenciales: ID de formulario o protección no válidos."
+
+#: inc/server/class-stripe-server.php:76
+msgid "ID of the Product."
+msgstr "ID del producto."
+
+#: inc/render/class-stripe-checkout-block.php:200 build/blocks/blocks.js:72
+msgid "Checkout"
+msgstr "Finalizar compra"
+
+#: inc/render/class-stripe-checkout-block.php:141 build/blocks/blocks.js:72
+msgid "Your payment was unsuccessful. If you have any questions, please email orders@example.com."
+msgstr "Tu pago no se ha realizado correctamente. Si tienes alguna pregunta, envía un correo electrónico a orders@example.com."
+
+#: inc/render/class-stripe-checkout-block.php:137 build/blocks/blocks.js:72
+msgid "Your payment was successful. If you have any questions, please email orders@example.com."
+msgstr "Tu pago se ha realizado correctamente. Si tienes alguna pregunta, envía un correo electrónico a orders@example.com."
+
+#: inc/render/class-posts-grid-block.php:186
+msgid "Updated on"
+msgstr "Actualizado el"
+
+#: inc/plugins/class-options-settings.php:318
+msgid "Stripe API key for the Stripe Block."
+msgstr "Clave de API Stripe para el bloque Stripe."
+
+#: inc/render/class-posts-grid-block.php:193
+msgid "Posted on"
+msgstr "Publicado el"
+
+#: inc/class-patterns.php:63
+msgid "Gallery"
+msgstr "Galería"
+
+#: inc/server/class-dynamic-content-server.php:74
+msgid "Unique ID."
+msgstr "ID único."
+
+#: inc/class-pro.php:335 inc/plugins/class-limited-offers.php:215
+#: build/blocks/blocks.js:33
+msgid "Learn more"
+msgstr "Aprende más"
+
+#: inc/class-pro.php:287 inc/plugins/class-form-records-meta-box.php:95
+#: inc/plugins/class-form-records-meta-box.php:453
+msgid "Update"
+msgstr "Actualizar"
+
+#: inc/class-main.php:605 inc/class-main.php:642 inc/class-pro.php:423
+msgid "Get Otter Pro"
+msgstr "Obtener Otter Pro"
+
+#: inc/render/class-posts-grid-block.php:258
+msgid "Read More"
+msgstr "Leer Más"
+
+#: inc/class-blocks-animation.php:303 build/blocks/blocks.js:33
+#: build/blocks/blocks.js:75 build/dashboard/index.js:1
+#: build/dashboard/index.js:9
+msgid "Done"
+msgstr "Hecho"
+
+#: inc/class-registration.php:611 build/blocks/blocks.js:42
+msgid "Minutes"
+msgstr "Minutos"
+
+#: inc/class-registration.php:613 build/blocks/blocks.js:42
+msgid "Hours"
+msgstr "Horas"
+
+#: inc/class-registration.php:614 build/blocks/blocks.js:42
+msgid "Day"
+msgstr "Día"
+
+#: inc/plugins/class-dashboard.php:1180 build/atomic-wind/editor.js:22
+#: build/blocks/blocks.js:42
+msgid "Date"
+msgstr "Fecha"
+
+#: inc/class-patterns.php:65 build/blocks/blocks.js:33
+#: build/blocks/blocks.js:36 build/blocks/blocks.js:42
+#: build/blocks/blocks.js:48 build/blocks/blocks.js:58
+#: build/blocks/blocks.js:64 build/blocks/blocks.js:66
+msgid "Text"
+msgstr "Texto"
+
+#: inc/class-patterns.php:72
+msgid "Call to Action"
+msgstr "Llamada a la acción"
+
+#: inc/plugins/class-form-records-list-table.php:79
+#: inc/plugins/class-form-records-list-table.php:95
+#: build/atomic-wind/editor.js:22 build/blocks/blocks.js:33
+#: build/blocks/blocks.js:36 build/blocks/blocks.js:42
+#: build/blocks/blocks.js:48 build/blocks/blocks.js:53
+#: build/blocks/blocks.js:64 build/blocks/blocks.js:72
+#: build/blocks/blocks.js:75
+msgid "Title"
+msgstr "Título"
+
+#: inc/plugins/class-dashboard.php:331 inc/plugins/class-dashboard.php:332
+#: build/blocks/blocks.js:33 build/dashboard/index.js:1
+msgid "Blocks"
+msgstr "Bloques"
+
+#: inc/class-patterns.php:80 build/blocks/blocks.js:75
+msgid "Testimonials"
+msgstr "Recomendaciones"
+
+#: inc/class-patterns.php:64
+msgid "Team"
+msgstr "Equipo"
+
+#: inc/render/amp/class-circle-counter-block.php:43
+#: inc/render/amp/class-circle-counter-block.php:60
+msgid "Skill"
+msgstr "Habilidad"
+
+#: inc/css/class-css-handler.php:228 inc/css/class-css-handler.php:380
+msgid "CSS updated."
+msgstr "CSS actualizado."
+
+#: inc/css/class-css-handler.php:140
+msgid "ID of the Post."
+msgstr "El ID de la entrada."
+
+#: inc/plugins/class-options-settings.php:247
+msgid "Anonymous data tracking object."
+msgstr "Objeto de seguimiento anónimo de datos."
+
+#: inc/server/class-dashboard-server.php:132
+msgid "Sorry, the filesystem isn't writeable."
+msgstr "Lo siento, no se puede escribir en el sistema de archivos."
+
+#: inc/server/class-dashboard-server.php:148
+msgid "Sorry, the directory doesn't exist."
+msgstr "Lo siento, el directorio no existe."
+
+#: inc/server/class-dashboard-server.php:164
+msgid "Styles deleted."
+msgstr "Estilos borrados."
+
+#: inc/plugins/class-options-settings.php:237 build/dashboard/index.js:7
+msgid "Become a contributor by opting in to our anonymous data tracking. We guarantee no sensitive data is collected."
+msgstr "Conviértete en colaborador apuntándote a nuestro seguimiento de datos anónimo. Garantizamos que no recogemos datos sensibles."
+
+#: inc/plugins/class-dashboard.php:323 inc/plugins/class-dashboard.php:324
+#: otter-blocks.php:110 build/atomic-wind/blocks/box/index.js:1
+#: build/atomic-wind/blocks/image/index.js:1
+#: build/atomic-wind/blocks/text/index.js:1 build/blocks/blocks.js:33
+#: build/blocks/blocks.js:36 build/blocks/blocks.js:42
+#: build/blocks/blocks.js:48 build/blocks/blocks.js:55
+#: build/blocks/blocks.js:58 build/blocks/blocks.js:64
+#: build/blocks/blocks.js:66 build/blocks/blocks.js:67
+#: build/blocks/blocks.js:71 build/blocks/blocks.js:72
+#: build/blocks/blocks.js:75 build/blocks/chunk-dynamic-content.js:1
+#: build/blocks/chunk-dynamic-content.js:4
+msgid "Settings"
+msgstr "Ajustes"
+
+#: inc/plugins/class-options-settings.php:127 build/dashboard/index.js:7
+msgid "Blocks Animation module allows to add CSS animations to each block in Block Editor."
+msgstr "El módulo Blocks Animation permite añadir animaciones CSS a cada bloque en el editor de bloques."
+
+#: inc/plugins/class-options-settings.php:116 build/dashboard/index.js:7
+msgid "Custom CSS module allows to add custom CSS to each block in Block Editor."
+msgstr "El módulo Personalizar CSS permite añadir CSS personalizado a cada bloque en el Editor de Bloques"
+
+#: inc/render/class-posts-grid-block.php:430 build/blocks/blocks.js:64
+#: build/blocks/blocks.js:93
+msgid "Next"
+msgstr "Siguiente"
+
+#: inc/plugins/class-options-settings.php:94
+msgid "Redirect on new install."
+msgstr "Redireccionar en una nueva instalación."
+
+#: inc/plugins/class-options-settings.php:378
+msgid "Make Section block your default block for Pages?"
+msgstr "¿Hacer el bloque de sección tu bloque por defecto para las páginas?"
+
+#: inc/class-registration.php:175
+msgid "Otter"
+msgstr "Otter"
+
+#. Author of the plugin
+#: otter-blocks.php
+msgid "ThemeIsle"
+msgstr "ThemeIsle"
+
+#. Plugin URI of the plugin
+#: otter-blocks.php
+msgid "https://themeisle.com/plugins/otter-blocks"
+msgstr "https://themeisle.com/plugins/otter-blocks"
+
+#. Author URI of the plugin
+#: otter-blocks.php
+msgid "https://themeisle.com"
+msgstr "https://themeisle.com"
+
+#: inc/class-registration.php:1335 inc/class-registration.php:1347
+#: inc/css/class-block-frontend.php:724 inc/css/class-block-frontend.php:736
+#: inc/css/class-css-handler.php:704 inc/css/class-css-handler.php:716
+#: inc/integrations/class-form-email.php:323
+#: inc/integrations/class-form-email.php:335
+#: inc/integrations/class-form-providers.php:146
+#: inc/integrations/class-form-providers.php:158
+#: inc/plugins/class-abilities.php:1135 inc/plugins/class-abilities.php:1146
+#: inc/plugins/class-block-conditions.php:444
+#: inc/plugins/class-block-conditions.php:456
+#: inc/plugins/class-dashboard.php:1264 inc/plugins/class-dashboard.php:1276
+#: inc/plugins/class-dynamic-content.php:1034
+#: inc/plugins/class-dynamic-content.php:1046
+#: inc/plugins/class-form-submissions.php:893
+#: inc/plugins/class-form-submissions.php:904
+#: inc/plugins/class-fse-onboarding.php:302
+#: inc/plugins/class-fse-onboarding.php:314
+#: inc/plugins/class-options-settings.php:1491
+#: inc/plugins/class-options-settings.php:1503
+#: inc/render/amp/class-circle-counter-block.php:103
+#: inc/render/amp/class-circle-counter-block.php:115
+#: inc/render/amp/class-lottie.block.php:85
+#: inc/render/amp/class-lottie.block.php:97
+#: inc/render/amp/class-slider-block.php:90
+#: inc/render/amp/class-slider-block.php:102
+#: inc/render/class-masonry-variant.php:105
+#: inc/render/class-masonry-variant.php:117
+#: inc/server/class-dashboard-server.php:227
+#: inc/server/class-dashboard-server.php:239
+#: inc/server/class-dynamic-content-server.php:317
+#: inc/server/class-dynamic-content-server.php:329
+#: inc/server/class-form-server.php:1318 inc/server/class-form-server.php:1330
+#: inc/server/class-fse-onboarding-server.php:128
+#: inc/server/class-fse-onboarding-server.php:140
+#: inc/server/class-prompt-server.php:431
+#: inc/server/class-prompt-server.php:443
+#: inc/server/class-stripe-server.php:157
+#: inc/server/class-stripe-server.php:169
+msgid "Cheatin&#8217; huh?"
+msgstr "Haciendo trampas ¿eh?"
+
+#. Description of the plugin
+#: otter-blocks.php
+msgid "Create beautiful and attracting posts, pages, and landing pages with Otter – Page Builder Blocks & Extensions for Gutenberg. Otter comes with dozens of Gutenberg blocks that are all you need to build beautiful pages."
+msgstr "Crea hermosas y atractivas entradas, páginas y páginas de destino con Otter – Page Builder Blocks & Extensions for Gutenberg. Otter viene con docenas de bloques para Gutenberg que son todo lo que necesitas para crear bonitas páginas."
+
+#: inc/render/class-sharing-icons-block.php:39 build/blocks/blocks.js:71
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/class-patterns.php:56 inc/plugins/class-abilities.php:95
+#: inc/plugins/class-dashboard.php:306 inc/plugins/class-dashboard.php:307
+#: inc/plugins/class-dashboard.php:729 build/dashboard/index.js:10
+msgid "Otter Blocks"
+msgstr "Otter Blocks"
+
+#: inc/plugins/class-options-settings.php:306
+msgid "Google Map API key for the Google Maps Gutenberg Block."
+msgstr "Clave API de Google Map para el bloque Gutenberg de Google Maps."
+
+#: inc/render/class-sharing-icons-block.php:74 build/blocks/blocks.js:71
+msgid "Reddit"
+msgstr "Reddit"
+
+#: inc/render/class-sharing-icons-block.php:67 build/blocks/blocks.js:71
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: inc/render/class-sharing-icons-block.php:60 build/blocks/blocks.js:71
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: inc/render/class-sharing-icons-block.php:53 build/blocks/blocks.js:71
+msgid "Linkedin"
+msgstr "LinkedIn"
+
+#: inc/render/class-posts-grid-block.php:205
+msgid "by"
+msgstr "por"
+
+#: inc/render/class-plugin-card-block.php:108
+msgid "Something went wrong"
+msgstr "Algo ha ido mal"
+
+#: inc/render/class-plugin-card-block.php:77
+msgid "version"
+msgstr "versión"
+
+#: inc/render/class-plugin-card-block.php:73
+msgid "active installs"
+msgstr "instalaciones activas"
+
+#: inc/render/class-plugin-card-block.php:87
+msgid "Download"
+msgstr "Descargar"
+
+#: inc/render/class-plugin-card-block.php:81
+msgid "tested up to"
+msgstr "probado hasta"
+
+#: inc/render/class-plugin-card-block.php:69
+msgid "Plugin Stats"
+msgstr "Estadísticas del plugin"

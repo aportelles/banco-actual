@@ -1,0 +1,1055 @@
+<?php
+/**
+ *  Common logic for CSS handling class.
+ *
+ * @package ThemeIsle\GutenbergBlocks
+ */
+
+namespace ThemeIsle\GutenbergBlocks;
+
+use Sabberworm\CSS\Parser;
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\RuleSet\DeclarationBlock;
+use Sabberworm\CSS\CSSList\AtRuleBlockList;
+use Sabberworm\CSS\CSSList\KeyFrame;
+
+/**
+ * Class Base_CSS
+ */
+class Base_CSS {
+
+	/**
+	 * Transient caching the rendered animation rules.
+	 *
+	 * @var string
+	 */
+	const ANIMATION_RULES_TRANSIENT = 'otter_animation_rules';
+
+	/**
+	 * Namespace of the bundled php-css-parser.
+	 *
+	 * @var string
+	 */
+	const PARSER_NAMESPACE = 'Sabberworm\\CSS\\';
+
+	/**
+	 * The namespace under which the blocks are registered.
+	 *
+	 * @var string
+	 */
+	protected $library_prefix = 'themeisle-blocks';
+
+	/**
+	 * Rest route namespace.
+	 *
+	 * @var string
+	 */
+	public $namespace = 'otter/';
+
+	/**
+	 * Rest route version.
+	 *
+	 * @var string
+	 */
+	public $version = 'v1';
+
+	/**
+	 * The namespace under which the block classees are saved.
+	 *
+	 * @var array
+	 */
+	protected static $blocks_classes = array();
+
+	/**
+	 * The namespace under which the fonts are saved.
+	 *
+	 * @var array
+	 */
+	protected static $google_fonts = array();
+
+	/**
+	 * Renderer instances built from the class list, in registration order.
+	 *
+	 * @var array<int, object>|null
+	 */
+	protected static $blocks_instances = null;
+
+	/**
+	 * Renderer instances indexed by the block name they render.
+	 *
+	 * @var array<string, array<int, object>>|null
+	 */
+	protected static $blocks_instances_by_name = null;
+
+	/**
+	 * Whether the class list is already scheduled for autoloading.
+	 *
+	 * @var bool
+	 */
+	protected static $is_autoload_registered = false;
+
+	/**
+	 * Renderers that threw this request.
+	 *
+	 * @var int
+	 */
+	protected static $render_failures = 0;
+
+	/**
+	 * Base_CSS constructor.
+	 *
+	 * @since   1.3.0
+	 * @access  public
+	 */
+	public function __construct() {
+		// Register once per request; renderers inherit this constructor.
+		if ( self::$is_autoload_registered ) {
+			return;
+		}
+
+		self::$is_autoload_registered = true;
+
+		add_action( 'init', array( $this, 'autoload_block_classes' ), 99 );
+	}
+
+	/**
+	 * Autoload classes for each block.
+	 *
+	 * @since   1.3.0
+	 * @access  public
+	 */
+	public function autoload_block_classes() {
+		self::$blocks_classes = array(
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Accordion_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Advanced_Column_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Advanced_Columns_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Advanced_Heading_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Button_Group_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Button_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Circle_Counter_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Countdown_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Core_Image_Plugin_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Font_Awesome_Icons_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Google_Map_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Icon_List_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Icon_List_Item_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Leaflet_Map_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Form_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Form_Input_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Form_Textarea_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Form_Multiple_Choice_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Flip_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Progress_Bar_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Popup_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Slider_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Review_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Tabs_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Posts_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Sharing_Icons_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Timeline_CSS',
+			'\ThemeIsle\GutenbergBlocks\CSS\Blocks\Timeline_Item_CSS',
+		);
+
+		self::$blocks_classes = apply_filters( 'otter_blocks_register_css', self::$blocks_classes );
+
+		self::reset_blocks_instances();
+	}
+
+	/**
+	 * Drop the cached renderer instances, so a changed class list is picked up.
+	 *
+	 * @return void
+	 * @access  public
+	 */
+	public static function reset_blocks_instances() {
+		self::$blocks_instances         = null;
+		self::$blocks_instances_by_name = null;
+	}
+
+	/**
+	 * Get one renderer instance per registered class, built once per request.
+	 *
+	 * Renderers hold no per-block state, so reusing them keeps memory flat
+	 * instead of scaling with the number of parsed blocks.
+	 *
+	 * @return array<int, object> Instances, in registration order.
+	 * @access  public
+	 */
+	public function get_blocks_instances() {
+		if ( null !== self::$blocks_instances ) {
+			return self::$blocks_instances;
+		}
+
+		$instances = array();
+
+		foreach ( self::$blocks_classes as $classname ) {
+			$path = Loader::instantiate( $classname );
+
+			if ( null === $path ) {
+				continue;
+			}
+
+			$instances[] = $path;
+		}
+
+		self::$blocks_instances = $instances;
+
+		return self::$blocks_instances;
+	}
+
+	/**
+	 * Get the renderers that handle a given block name.
+	 *
+	 * @param mixed $block_name Block name, as parsed; may be missing or null.
+	 *
+	 * @return array<int, object> Renderers for that block, in registration order.
+	 * @access  public
+	 */
+	public function get_blocks_instances_for( $block_name ) {
+		if ( null === self::$blocks_instances_by_name ) {
+			$index = array();
+
+			foreach ( $this->get_blocks_instances() as $path ) {
+				if ( ! method_exists( $path, 'render_css' ) || ! isset( $path->block_prefix ) ) {
+					continue;
+				}
+
+				$name = ( isset( $path->library_prefix ) ? $path->library_prefix : $this->library_prefix ) . '/' . $path->block_prefix;
+
+				if ( ! isset( $index[ $name ] ) ) {
+					$index[ $name ] = array();
+				}
+
+				$index[ $name ][] = $path;
+			}
+
+			self::$blocks_instances_by_name = $index;
+		}
+
+		if ( ! is_string( $block_name ) || ! isset( self::$blocks_instances_by_name[ $block_name ] ) ) {
+			return array();
+		}
+
+		return self::$blocks_instances_by_name[ $block_name ];
+	}
+
+	/**
+	 * Check if string is empty without accepting zero
+	 *
+	 * @param string $value Var to check.
+	 *
+	 * @return bool
+	 * @since   1.3.1
+	 * @access  public
+	 */
+	public function is_empty( $value ) {
+		return empty( $value ) && 0 !== $value;
+	}
+
+	/**
+	 * Get block attribute value with default
+	 *
+	 * @param mixed $attr Attributes.
+	 * @param mixed $default_value Default value.
+	 *
+	 * @return mixed
+	 * @since   1.3.0
+	 * @access  public
+	 */
+	public function get_attr_value( $attr, $default_value = 'unset' ) {
+		if ( ! $this->is_empty( $attr ) ) {
+			return $attr;
+		} else {
+			return $default_value;
+		}
+	}
+
+	/**
+	 * Get Google Fonts
+	 *
+	 * @param array $attr Attr values.
+	 *
+	 * @since   1.3.0
+	 * @access  public
+	 */
+	public function get_google_fonts( $attr ) {
+		if ( isset( $attr['fontFamily'] ) ) {
+			if ( ! array_key_exists( $attr['fontFamily'], self::$google_fonts ) ) {
+				self::$google_fonts[ $attr['fontFamily'] ] = array(
+					'fontfamily'  => $attr['fontFamily'],
+					'fontvariant' => ( isset( $attr['fontVariant'] ) && ! empty( $attr['fontVariant'] ) ? array( $attr['fontVariant'] ) : array() ),
+				);
+			} elseif ( isset( $attr['fontVariant'] ) && ! empty( $attr['fontVariant'] ) ) {
+				$font_variant = $attr['fontVariant'];
+				if ( ! in_array( $font_variant, self::$google_fonts[ $attr['fontFamily'] ]['fontvariant'], true ) ) {
+					self::$google_fonts[ $attr['fontFamily'] ]['fontvariant'][] = $font_variant;
+				}
+			}
+		}
+	}
+
+	/**
+	 * Convert HEX to RGBA.
+	 *
+	 * @param string   $color Color data.
+	 * @param bool|int $opacity Opacity status.
+	 *
+	 * @return mixed
+	 * @since   1.3.0
+	 * @access  public
+	 */
+	public static function hex2rgba( $color, $opacity = false ) {
+		$default = 'rgb(0,0,0)';
+
+		if ( empty( $color ) ) {
+			return $default;
+		}
+
+		if ( '#' == $color[0] ) {
+			$color = substr( $color, 1 );
+		}
+
+		if ( strlen( $color ) == 6 ) {
+			$hex = array( $color[0] . $color[1], $color[2] . $color[3], $color[4] . $color[5] );
+		} elseif ( strlen( $color ) == 3 ) {
+			$hex = array( $color[0] . $color[0], $color[1] . $color[1], $color[2] . $color[2] );
+		} else {
+			return $default;
+		}
+
+		$rgb = array_map( 'hexdec', $hex );
+
+		if ( $opacity >= 0 ) {
+			if ( abs( $opacity ) > 1 ) {
+				$opacity = 1.0;
+			}
+			$output = 'rgba( ' . implode( ',', $rgb ) . ',' . $opacity . ' )';
+		} else {
+			$output = 'rgb( ' . implode( ',', $rgb ) . ' )';
+		}
+
+		return $output;
+	}
+
+	/**
+	 * Convert a color slug to a CSS variable reference.
+	 * WordPress generates CSS variables in the format: --wp--preset--color--{slug}
+	 *
+	 * @param string|null $slug The color slug.
+	 * @return string|null The CSS variable reference.
+	 * @since   3.1.5
+	 * @access  public
+	 */
+	public static function get_color_css_variable( $slug ) {
+		if ( empty( $slug ) ) {
+			return $slug;
+		}
+
+		// If it's already a color value or CSS variable, return as-is.
+		if (
+			strpos( $slug, '#' ) === 0 ||
+			strpos( $slug, 'rgb' ) === 0 ||
+			strpos( $slug, 'hsl' ) === 0 ||
+			strpos( $slug, 'var(' ) === 0
+		) {
+			return $slug;
+		}
+
+		// Sanitize slug: WordPress slugs should only contain lowercase alphanumeric, hyphens, and underscores.
+		// This prevents potential CSS injection if slug comes from untrusted sources.
+		$sanitized_slug = strtolower( preg_replace( '/[^a-z0-9-_]/', '', $slug ) );
+
+		// Convert slug to CSS variable.
+		return 'var(--wp--preset--color--' . $sanitized_slug . ')';
+	}
+
+	/**
+	 * Resolve a color value which may be a slug from the theme color palette.
+	 * This function converts slugs to CSS variables to preserve the connection to theme.json.
+	 * If the value is a slug, it returns a CSS variable reference.
+	 * Otherwise, returns the value as-is (for hex, rgb, hsl values).
+	 *
+	 * @param string|null $value The color value or slug.
+	 * @return string|null The CSS variable or color value.
+	 * @since   3.1.5
+	 * @access  public
+	 */
+	public static function resolve_color_value( $value ) {
+		// Use CSS variable conversion for slugs.
+		return self::get_color_css_variable( $value );
+	}
+
+	/**
+	 * Get Blocks CSS
+	 *
+	 * @param int $post_id Post id.
+	 * @return string|void
+	 * @since   1.3.0
+	 * @access  public
+	 */
+	public function get_blocks_css( $post_id ) {
+		if ( ! function_exists( 'has_blocks' ) ) {
+			return;
+		}
+
+		$content = get_post_field( 'post_content', $post_id );
+		$blocks  = parse_blocks( $content );
+
+		if ( ! is_array( $blocks ) || empty( $blocks ) ) {
+			return;
+		}
+
+		$animations = boolval( preg_match( '/\banimated\b/', $content ) );
+
+		return $this->cycle_through_static_blocks( $blocks, $animations );
+	}
+
+	/**
+	 * Get Widgets CSS
+	 *
+	 * @return string|void
+	 * @since   1.7.0
+	 * @access  public
+	 */
+	public function get_widgets_css() {
+		if ( ! function_exists( 'has_blocks' ) ) {
+			return;
+		}
+
+		$content = Registration::get_active_widgets_content();
+
+		$blocks = parse_blocks( $content );
+
+		if ( ! is_array( $blocks ) || empty( $blocks ) ) {
+			return '';
+		}
+
+		$animations = boolval( preg_match( '/\banimated\b/', $content ) );
+
+		return $this->cycle_through_static_blocks( $blocks, $animations );
+	}
+
+	/**
+	 * Get Reusable Blocks CSS
+	 *
+	 * @param int $post_id Post id.
+	 * @return string|void
+	 * @since   1.3.0
+	 * @access  public
+	 */
+	public function get_reusable_block_css( $post_id ) {
+		$reusable_block = get_post( $post_id );
+
+		if ( ! $reusable_block || 'wp_block' !== $reusable_block->post_type ) {
+			return;
+		}
+
+		if ( 'publish' !== $reusable_block->post_status || ! empty( $reusable_block->post_password ) ) {
+			return;
+		}
+
+		$blocks     = parse_blocks( $reusable_block->post_content );
+		$animations = boolval( preg_match( '/\banimated\b/', $reusable_block->post_content ) );
+
+		return $this->cycle_through_static_blocks( $blocks, $animations );
+	}
+
+	/**
+	 * Cycle thorugh Static Blocks
+	 *
+	 * @param array $blocks List of blocks.
+	 * @param bool  $animations To check for animations or not.
+	 *
+	 * @return string Style.
+	 * @since   1.3.0
+	 * @access  public
+	 */
+	public function cycle_through_static_blocks( $blocks, $animations = true ) {
+		$style = '';
+
+		foreach ( $blocks as $block ) {
+			$renderers = $this->get_blocks_instances_for( isset( $block['blockName'] ) ? $block['blockName'] : null );
+
+			foreach ( $renderers as $path ) {
+				$style .= $this->run_renderer( $path, 'render_css', array( $block ) );
+			}
+
+			$custom_css = apply_filters( 'otter_blocks_css', $block );
+
+			if ( is_string( $custom_css ) ) {
+				$style .= $custom_css;
+			}
+
+			if ( isset( $block['innerBlocks'] ) && ! empty( $block['innerBlocks'] ) && is_array( $block['innerBlocks'] ) ) {
+				$style .= $this->cycle_through_static_blocks( $block['innerBlocks'], false );
+			}
+		}
+
+		if ( true === $animations && class_exists( '\ThemeIsle\GutenbergBlocks\Blocks_Animation' ) && get_option( 'themeisle_blocks_settings_blocks_animation', true ) && get_option( 'themeisle_blocks_settings_optimize_animations_css', true ) ) {
+			$style .= $this->get_animation_css( $blocks );
+		}
+
+		return $style;
+	}
+
+	/**
+	 * Get Animation CSS
+	 *
+	 * @param array $blocks List of blocks.
+	 *
+	 * @return string CSS.
+	 * @since   2.0.10
+	 * @access  public
+	 */
+	public function get_animation_css( $blocks ) {
+		$style   = '';
+		$classes = $this->get_animation_classes( $blocks );
+
+		if ( 0 === count( $classes ) ) {
+			return $style;
+		}
+
+		if ( ! self::has_own_css_parser() ) {
+			// A foreign php-css-parser release is loaded; parsing now fatals
+			// uncatchably at class-link time (#2942). The frontend loader serves
+			// the stock stylesheet instead.
+			error_log( '[Otter Blocks] A conflicting Sabberworm php-css-parser release is loaded; skipping animation CSS optimization and serving the stock stylesheet instead.' ); // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
+			return $style;
+		}
+
+		$prepared_classes = array( ':root' );
+
+		foreach ( $classes as $class ) {
+			array_push( $prepared_classes, '.' . $class, '.animated.' . $class );
+		}
+
+		$classes = $prepared_classes;
+
+		$rules = get_transient( self::ANIMATION_RULES_TRANSIENT );
+
+		if ( false === $rules ) {
+			$rules = self::with_bundled_parser(
+				function () {
+					return $this->parse_animation_rules();
+				}
+			);
+
+			set_transient( self::ANIMATION_RULES_TRANSIENT, $rules, MONTH_IN_SECONDS );
+		}
+
+		foreach ( $rules as $rule ) {
+			if ( null === $rule['selectors'] ) {
+				$style .= $rule['css'];
+				continue;
+			}
+
+			foreach ( $rule['selectors'] as $selector ) {
+				if ( in_array( $selector, $classes ) ) {
+					$style .= $rule['css'];
+				}
+			}
+		}
+
+		return $style;
+	}
+
+	/**
+	 * Parse the bundled animation stylesheet into rendered rules.
+	 *
+	 * Only strings are returned for caching: a cached parser object graph loads
+	 * the bundled parser classes on every read, bypassing has_own_css_parser().
+	 *
+	 * @return list<array{selectors: list<string>|null, css: string}> Rules in stylesheet order; `null` selectors means always included.
+	 */
+	private function parse_animation_rules() {
+		$parser = null;
+		if ( function_exists( 'wpcom_vip_file_get_contents' ) ) {
+			$parser = new Parser( wpcom_vip_file_get_contents( OTTER_BLOCKS_PATH . '/build/animation/index.css' ) );
+		} else {
+			$parser = new Parser( file_get_contents( OTTER_BLOCKS_PATH . '/build/animation/index.css' ) ); // phpcs:ignore WordPressVIPMinimum.Performance.FetchingRemoteData.FileGetContentsUnknown
+		}
+
+		$format = OutputFormat::createCompact();
+		$rules  = array();
+
+		foreach ( $parser->parse()->getContents() as $rule ) {
+			if ( $rule instanceof DeclarationBlock ) {
+				$rules[] = array(
+					'selectors' => array_map( 'strval', $rule->getSelectors() ),
+					'css'       => $rule->render( $format ),
+				);
+				continue;
+			}
+
+			/*
+			 * This is used to get the reduced-motion animation styles.
+			 */
+			if ( $rule instanceof AtRuleBlockList ) {
+				if ( false === in_array( $rule->atRuleArgs(), array( '(prefers-reduced-motion:reduce),print', 'screen' ) ) ) {
+					continue;
+				}
+
+				$rules[] = array(
+					'selectors' => null,
+					'css'       => $rule->render( $format ),
+				);
+				continue;
+			}
+
+			/*
+			 * This is used to get actual animation which is a @keyframe.
+			 */
+			if ( $rule instanceof KeyFrame ) {
+				$rules[] = array(
+					'selectors' => array( '.' . $rule->getAnimationName() ),
+					'css'       => $rule->render( $format ),
+				);
+			}
+		}
+
+		return $rules;
+	}
+
+	/**
+	 * Check that every loaded Sabberworm\CSS symbol resolves to this plugin's copy.
+	 *
+	 * Another plugin can ship a different php-css-parser release under the same
+	 * namespace. Once any of its classes loads, loading the bundled counterparts
+	 * fatals at class-link time, and that error is not catchable.
+	 *
+	 * @return bool
+	 */
+	public static function has_own_css_parser() {
+		$own_vendor = wp_normalize_path( OTTER_BLOCKS_PATH . '/vendor/' );
+
+		// Reject any foreign copy already in memory before the sentinel checks
+		// autoload a bundled class: the parser uses more classes than the
+		// sentinels, and one preloaded foreign symbol poisons the process.
+		$declared = array_merge( get_declared_classes(), get_declared_interfaces(), get_declared_traits() );
+
+		foreach ( $declared as $declared_name ) {
+			// PHP class names are case-insensitive; match a foreign copy in any casing.
+			if ( 0 !== stripos( $declared_name, self::PARSER_NAMESPACE ) ) {
+				continue;
+			}
+
+			if ( ! self::is_bundled_class( $declared_name, $own_vendor ) ) {
+				return false;
+			}
+		}
+
+		return self::with_bundled_parser(
+			static function () use ( $own_vendor ) {
+				// Entry points nothing may have loaded yet: whichever autoloader
+				// resolves them must serve the bundled copy.
+				$sentinels = array(
+					'\Sabberworm\CSS\Parser',
+					'\Sabberworm\CSS\Comment\Commentable',
+					'\Sabberworm\CSS\Renderable',
+				);
+
+				foreach ( $sentinels as $sentinel ) {
+					if ( ! class_exists( $sentinel ) && ! interface_exists( $sentinel ) ) {
+						return false;
+					}
+
+					if ( ! self::is_bundled_class( $sentinel, $own_vendor ) ) {
+						return false;
+					}
+				}
+
+				return true;
+			}
+		);
+	}
+
+	/**
+	 * Stop this plugin's Composer autoloader from serving the bundled php-css-parser.
+	 *
+	 * The parser is unprefixed: serving it to another plugin that already loaded
+	 * its own release mixes the two and fatals at class-link time. The classmap
+	 * leaves it out (composer.json), and with_bundled_parser() loads it for this
+	 * plugin only.
+	 *
+	 * @return void
+	 */
+	public static function isolate_bundled_parser() {
+		$own_vendor = wp_normalize_path( OTTER_BLOCKS_PATH . '/vendor/' );
+
+		foreach ( spl_autoload_functions() as $autoloader ) {
+			if ( ! is_array( $autoloader ) || ! $autoloader[0] instanceof \Composer\Autoload\ClassLoader ) {
+				continue;
+			}
+
+			$prefixes = $autoloader[0]->getPrefixesPsr4();
+
+			if ( ! isset( $prefixes[ self::PARSER_NAMESPACE ] ) ) {
+				continue;
+			}
+
+			// Another plugin's loader may map the same namespace to its own copy.
+			foreach ( $prefixes[ self::PARSER_NAMESPACE ] as $dir ) {
+				if ( 0 === strpos( wp_normalize_path( $dir ), $own_vendor ) ) {
+					$autoloader[0]->setPsr4( self::PARSER_NAMESPACE, array() );
+					break;
+				}
+			}
+		}
+	}
+
+	/**
+	 * Run a callback with the bundled php-css-parser autoloadable.
+	 *
+	 * @template T
+	 * @param callable(): T $callback Code that loads parser classes.
+	 * @return T
+	 */
+	private static function with_bundled_parser( $callback ) {
+		$source     = OTTER_BLOCKS_PATH . '/vendor/sabberworm/php-css-parser/src/';
+		$autoloader = static function ( $class_name ) use ( $source ) {
+			if ( 0 !== strpos( $class_name, self::PARSER_NAMESPACE ) ) {
+				return;
+			}
+
+			$file = $source . str_replace( '\\', '/', substr( $class_name, strlen( self::PARSER_NAMESPACE ) ) ) . '.php';
+
+			if ( is_file( $file ) ) {
+				require $file;
+			}
+		};
+
+		// Appended: a parser another plugin registers resolves first, so the
+		// sentinel check sees its copy and the bundled one is never loaded over it.
+		spl_autoload_register( $autoloader, true, false );
+
+		try {
+			return $callback();
+		} finally {
+			spl_autoload_unregister( $autoloader );
+		}
+	}
+
+	/**
+	 * Check that a class, interface, or trait was loaded from this plugin's vendor directory.
+	 *
+	 * @param string $name Fully qualified name.
+	 * @param string $own_vendor Normalized path of this plugin's vendor directory.
+	 * @return bool
+	 */
+	private static function is_bundled_class( $name, $own_vendor ) {
+		$reflection = new \ReflectionClass( $name );
+		$file       = $reflection->getFileName();
+
+		return false !== $file && 0 === strpos( wp_normalize_path( $file ), $own_vendor );
+	}
+
+	/**
+	 * Get Animation Classes
+	 *
+	 * @param array $blocks List of blocks.
+	 *
+	 * @return array CSS classes.
+	 * @since   2.0.10
+	 * @access  public
+	 */
+	public function get_animation_classes( $blocks ) {
+		$classes = array();
+
+		$allowed_classes = array(
+			'animated',
+			'bounce',
+			'flash',
+			'pulse',
+			'rubberBand',
+			'shakeX',
+			'shakeY',
+			'headShake',
+			'swing',
+			'tada',
+			'wobble',
+			'jello',
+			'heartBeat',
+			'hinge',
+			'jackInTheBox',
+			'backInDown',
+			'backInLeft',
+			'backInRight',
+			'backInUp',
+			'backOutDown',
+			'backOutLeft',
+			'backOutRight',
+			'backOutUp',
+			'bounceIn',
+			'bounceInDown',
+			'bounceInLeft',
+			'bounceInRight',
+			'bounceInUp',
+			'bounceOut',
+			'bounceOutDown',
+			'bounceOutLeft',
+			'bounceOutRight',
+			'bounceOutUp',
+			'fadeIn',
+			'fadeInDown',
+			'fadeInDownBig',
+			'fadeInLeft',
+			'fadeInLeftBig',
+			'fadeInRight',
+			'fadeInRightBig',
+			'fadeInUp',
+			'fadeInTopLeft',
+			'fadeInTopRight',
+			'fadeInBottomLeft',
+			'fadeInBottomRight',
+			'fadeOut',
+			'fadeOutDown',
+			'fadeOutDownBig',
+			'fadeOutLeft',
+			'fadeOutLeftBig',
+			'fadeOutRight',
+			'fadeOutRightBig',
+			'fadeOutUp',
+			'fadeOutUpBig',
+			'fadeOutTopLeft',
+			'fadeOutTopRight',
+			'fadeOutBottomRight',
+			'fadeOutBottomLeft',
+			'flip',
+			'flipInX',
+			'flipInY',
+			'flipOutX',
+			'flipOutY',
+			'lightSpeedInRight',
+			'lightSpeedInLeft',
+			'lightSpeedOutRight',
+			'lightSpeedOutLeft',
+			'rotateIn',
+			'rotateInDownLeft',
+			'rotateInDownRight',
+			'rotateInUpLeft',
+			'rotateInUpRight',
+			'rotateOut',
+			'rotateOutDownLeft',
+			'rotateOutDownRight',
+			'rotateOutUpLeft',
+			'rotateOutUpRight',
+			'slideInDown',
+			'slideInLeft',
+			'slideInRight',
+			'slideInUp',
+			'slideOutDown',
+			'slideOutLeft',
+			'slideOutRight',
+			'slideOutUp',
+			'zoomIn',
+			'zoomInDown',
+			'zoomInLeft',
+			'zoomInRight',
+			'zoomInUp',
+			'zoomOut',
+			'zoomOutDown',
+			'zoomOutLeft',
+			'zoomOutRight',
+			'zoomOutUp',
+			'rollIn',
+			'rollOut',
+			'backOutDown',
+			'backOutLeft',
+			'backOutRight',
+			'backOutUp',
+			'bounceOut',
+			'bounceOutDown',
+			'bounceOutLeft',
+			'bounceOutRight',
+			'bounceOutUp',
+			'fadeOut',
+			'fadeOutDown',
+			'fadeOutDownBig',
+			'fadeOutLeft',
+			'fadeOutLeftBig',
+			'fadeOutRight',
+			'fadeOutRightBig',
+			'fadeOutUp',
+			'fadeOutUpBig',
+			'fadeOutTopLeft',
+			'fadeOutTopRight',
+			'fadeOutBottomRight',
+			'fadeOutBottomLeft',
+			'flipOutX',
+			'flipOutY',
+			'lightSpeedOutRight',
+			'lightSpeedOutLeft',
+			'rotateOut',
+			'rotateOutDownLeft',
+			'rotateOutDownRight',
+			'rotateOutUpLeft',
+			'rotateOutUpRight',
+			'slideOutDown',
+			'slideOutLeft',
+			'slideOutRight',
+			'slideOutUp',
+			'zoomOut',
+			'zoomOutDown',
+			'zoomOutLeft',
+			'zoomOutRight',
+			'zoomOutUp',
+			'rollOut',
+			'delay-100ms',
+			'delay-200ms',
+			'delay-500ms',
+			'delay-1s',
+			'delay-2s',
+			'delay-3s',
+			'delay-4s',
+			'delay-5s',
+			'slow',
+			'slower',
+			'fast',
+			'faster',
+		);
+
+		foreach ( $blocks as $block ) {
+			$block_classes = Registration::get_class_name( isset( $block['attrs'] ) ? $block['attrs'] : array() );
+
+			if ( ! empty( $block_classes ) && preg_match( '/\banimated\b/', $block_classes ) ) {
+				$classes = array_merge( $classes, explode( ' ', trim( $block_classes ) ) );
+			}
+
+			if ( isset( $block['innerBlocks'] ) && ! empty( $block['innerBlocks'] ) && is_array( $block['innerBlocks'] ) ) {
+				$classes = array_merge( $classes, $this->get_animation_classes( $block['innerBlocks'] ) );
+			}
+		}
+
+		$classes = array_intersect( array_unique( $classes ), $allowed_classes );
+
+		return $classes;
+	}
+
+	/**
+	 * Cycle thorugh Global Styles
+	 *
+	 * @return string Style.
+	 * @since   2.0.0
+	 * @access  public
+	 */
+	public function cycle_through_global_styles() {
+		$style = '';
+		foreach ( $this->get_blocks_instances() as $path ) {
+			if ( method_exists( $path, 'render_global_css' ) ) {
+				$style .= $this->run_renderer( $path, 'render_global_css' );
+			}
+		}
+
+		return $style;
+	}
+
+	/**
+	 * Run one renderer method, skipping it when it throws.
+	 *
+	 * A renderer can fail on a dependency the autoloader cannot resolve (e.g. a
+	 * stale classmap); the other renderers must still produce their CSS.
+	 *
+	 * @param object            $path   Renderer instance.
+	 * @param string            $method Render method to call.
+	 * @param array<int, mixed> $args   Method arguments.
+	 *
+	 * @return mixed The renderer output, or an empty string when it threw.
+	 */
+	protected function run_renderer( $path, $method, $args = array() ) {
+		try {
+			return call_user_func_array( array( $path, $method ), $args );
+		} catch ( \Throwable $e ) {
+			++self::$render_failures;
+			Loader::log_skipped( get_class( $path ), 'threw while rendering CSS: ' . $e->getMessage() );
+
+			return '';
+		}
+	}
+
+	/**
+	 * Number of renderers that threw this request.
+	 *
+	 * Compare before and after generating CSS to tell whether the result is partial.
+	 *
+	 * @return int
+	 */
+	public static function get_render_failures() {
+		return self::$render_failures;
+	}
+
+	/**
+	 * Cycle thorugh Reusable Blocks
+	 *
+	 * @param array $blocks List of blocks.
+	 *
+	 * @return string Style.
+	 * @since   1.3.0
+	 * @access  public
+	 */
+	public function cycle_through_reusable_blocks( $blocks ) {
+		$style = '';
+
+		foreach ( $blocks as $block ) {
+			if ( 'core/block' === $block['blockName'] && ! empty( $block['attrs']['ref'] ) ) {
+				$style .= $this->get_reusable_block_css( $block['attrs']['ref'] );
+			}
+
+			if ( isset( $block['innerBlocks'] ) && ! empty( $block['innerBlocks'] ) && is_array( $block['innerBlocks'] ) ) {
+				$style .= $this->cycle_through_reusable_blocks( $block['innerBlocks'] );
+			}
+		}
+
+		return $style;
+	}
+
+	/**
+	 * Check if an url points to an image by checking if the an image extension exists.
+	 *
+	 * @param string $url The url.
+	 *
+	 * @return bool
+	 * @since   1.4.4
+	 * @access  public
+	 */
+	public static function is_image_url( $url ) {
+		return is_string( $url ) && ( preg_match( '/\.(jpeg|jpg|png|gif|svg|bmp|ico|tiff|webp)$/i', $url ) || preg_match( '/\/dynamic\/?.[^"]*/i', $url ) );
+	}
+
+	/**
+	 * Method to return path to child class in a Reflective Way.
+	 *
+	 * @return  string
+	 * @since   1.3.0
+	 * @access  protected
+	 */
+	protected function get_dir() {
+		return __DIR__;
+	}
+
+	/**
+	 * Throw error on object clone
+	 *
+	 * The whole idea of the singleton design pattern is that there is a single
+	 * object therefore, we don't want the object to be cloned.
+	 *
+	 * @access  public
+	 * @return  void
+	 * @since   1.3.0
+	 */
+	public function __clone() {
+		// Cloning instances of the class is forbidden.
+		_doing_it_wrong( __FUNCTION__, 'Cheatin&#8217; huh?', '1.0.0' );
+	}
+
+	/**
+	 * Disable unserializing of the class
+	 *
+	 * @access  public
+	 * @return  void
+	 * @since   1.3.0
+	 */
+	public function __wakeup() {
+		// Unserializing instances of the class is forbidden.
+		_doing_it_wrong( __FUNCTION__, 'Cheatin&#8217; huh?', '1.0.0' );
+	}
+}

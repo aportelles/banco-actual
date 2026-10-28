@@ -1,0 +1,1257 @@
+/*
+Theme Name:  Nevechild theme
+Description: Tema hijo para hacer personalizaciones de código
+Author:      Website4Cuba
+Author URL:  
+Template:    neve
+Version:     1.7
+License:     GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: neve-child
+*/
+/*header{
+	position: fixed;
+	top:0;
+	width:100%;
+	max-width: 100%;
+	height:20px;
+	z-index:9999;
+
+	background-color:black;
+	color:white;
+}
+
+#content{
+	margin-top:20px;
+}*/
+
+[data-neve-theme="light"], html.neve-light-theme{
+	
+--nv-primary-accent: #98DB11 !important;
+--nv-secondary-accent:#176618 !important;
+--nv-site-bg:#ffffff;
+--nv-light-bg:#f3f5fa;
+--nv-dark-bg:#3a2d60;
+--nv-text-color:#3a3a3a;
+--nv-text-dark-bg:#ffffff;
+--nv-c-1: #176618;
+--nv-c-2 :#176618;}
+
+.subpage-header{
+    padding: 60px!important;
+    background-color:#f3f5fa; 
+    margin-bottom: 40px;
+ }
+ 
+
+ #wp-block-themeisle-blocks-advanced-columns-9a38cbaa{
+     z-index: 99;
+ }
+ .builder-item--primary-menu {
+
+    --hovertextcolor: #fff !important;
+ }
+
+@media (min-width: 960px) {
+    .header-main-inner .builder-item--primary-menu .primary-menu-ul.menu-desktop {
+        flex-wrap: nowrap;
+    }
+
+    .header-main-inner .builder-item--primary-menu .primary-menu-ul.menu-desktop > li {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
+    .header-main-inner .builder-item--primary-menu .primary-menu-ul.menu-desktop > li > .wrap {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1100px) {
+    .header-main-inner .builder-item--primary-menu .primary-menu-ul.menu-desktop > li > .wrap > a {
+        font-size: 12px;
+    }
+}
+
+ .builder-item .item--inner {
+   font-weight:500!important; 
+   
+}
+.nv-overlay {
+    background: var(--bgcolor,var(--nv-dark-bg));
+    mix-blend-mode: var(--blendmode,normal);
+    opacity: calc(var(--opacity)/ 100);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
+.nv-post-cover{
+background-image:url(http://localhost/banco-actual/wp-content/uploads/2024/05/inicio_faqs.jpg) !important;
+}
+.coverportafolio{
+    display:flex;
+    min-height:280px;
+}
+.title-portafolio{
+ text-decoration:none;
+}
+.entry-content a:not([class]),.nv-comment-content a:not([class]),.nv-template .neve-main a:not([class]),.widget_text a:not([class]) {
+  --linkdeco:none !important; 
+}
+.wp-block-cb-carousel .slick-slide{
+	padding-left:0px;
+	padding-right:0px;
+}
+footer .widget li a {
+    font-size:16px;
+}
+footer .widget li a:hover {
+    text-decoration: underline;
+    color:#999;
+}
+.wp-block-social-link a {
+    font-size: 28px !important;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tabvertical{
+     float: left;
+      width: 30%;
+      height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  color: #0d6b4d;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 18px;
+  transition: 0.3s;
+ 
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #98db11;
+  color:#fff;
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+ .tab button{ 
+     width: 100%;
+     font-size: 16px;}   
+}
+
+/* Style the tab content */
+.tabcontent {
+    
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.contentvertical{
+     float: left; 
+     width: 70%;
+     border-left: none;
+     height: 300px;
+     background-color: #f3f5fa;
+     display: block;
+}
+/* table style*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+   /* font-family: "Open Sans", sans-serif !important;*/
+}
+td,
+th {
+    padding: 5px !important;
+    font-size: 18px;
+    border-bottom: 0px!important;
+}
+
+th {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #98db11;
+    font-weight: 600;
+    font-variant: normal;
+    text-decoration: none;
+    border-top-color: #fff;
+    padding-left: 0;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #fff;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    border-top: 0;
+    padding-left: 0;
+    text-align: left;
+}
+tr:nth-child(odd) {
+    background-color:#f3f5fa;
+    color: #0d6b4d;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    border-top: 0;
+    padding-left: 0;
+    text-align: left;
+    
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    table,
+    tbody,
+    td,
+    th,
+    tr {
+        /*display: block;*/
+    }
+    thead {
+        display: none;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        margin-bottom: 0.625em;
+        margin: 0 0 1rem 0;
+    }
+   /* td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+   td:before {
+       content: attr(data-label);
+       position: absolute;
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+     
+    }*/
+   td {
+     display: block;
+     text-align: right!important;
+     position: relative;
+     padding-left: 50%;
+}
+
+td::before {
+     content: attr(data-label);
+     position: absolute;
+     left: 0;
+     width: 50%;
+     padding-left: 15px;
+     font-weight: bold;
+     text-align: left;
+}
+     
+}
+input[type="checkbox"] {
+    height: 12px;
+}
+input[type="file"] {
+    height: 25px;
+    padding: 0;
+}
+input[type="range"]:focus {
+    outline: 0;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+  
+    background: #03a9f4;
+    border-radius: 25px;
+}
+input[type="range"]::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 4px 0 #000;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #03a9f4;
+}
+.range-wrap {
+    position: relative;
+}
+.range-value {
+    position: absolute;
+    top: -50%;
+}
+.range-value span {
+    width: auto;
+    height: 28px;
+    line-height: 24px;
+    text-align: center;
+    background: #03a9f4;
+    color: #fff;
+    font-size: 17px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.range-value span:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #03a9f4;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -1px;
+}
+textarea {
+    width: 100%;
+}
+input,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="text"],
+select,
+textarea {
+    background: #fff;
+    border: 1px solid #838383;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    height: 45px;
+    /*width: 28% !important;*/
+    /*margin-bottom: 10px!important;*/
+    padding: 0 10px;
+    position: relative;
+}
+input:read-only {
+  background-color: #f3f5fa;
+}
+select.simulador {
+    width: auto !important;
+}
+.wfbutton{
+width: -webkit-fill-available !important;}
+
+
+.drigth {
+   float: right !important;
+}
+
+@media only screen and (min-device-width:1024px) {
+.dleft{
+    float: left !important;
+}
+.drigth{
+    float: right !important;
+    text-align: right !important;
+} 
+}
+.let-nav{
+position:sticky;
+top: 60px;
+}
+.left-nav li a {
+    display: block;
+    padding: 16px 22px 16px 22px;
+    font-size: 16px;
+    color: #1c1c1c;
+    font-family: "Open Sans", sans-serif;
+    border-top: 1px solid #dadee8;
+    background: #f3f5fa;
+    border-left: 5px solid grey;
+}
+.left-nav li a:link {
+    color: #1c1c1c;
+}
+.left-nav li a:active  {
+   
+    background: #fff;
+    color:#98db11;
+    border-left: 5px solid greenyellow;
+    
+}
+
+.left-nav li a:hover{
+    background: #fff;
+    border-left: 5px solid greenyellow;
+    
+}
+.left-nav li a i {
+    float: right;
+    color: #48494b;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+   -webkit-font-smoothing: antialiased;}
+
+.sblocalidad{
+  margin: 20px;  
+}
+@media only screen and (max-device-width:767px) {
+ .sblocalidad{
+      width: -webkit-fill-available; 
+}   
+}
+
+/* Create three equal columns that floats next to each other */
+.listcolumn {
+  float: left;
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  background-color:#f3f5fa;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.listrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.separator{
+    border-bottom:2px solid #000;
+}
+.visitorcounter-cta {
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    
+   
+}
+.visitorcounter-cta:before {
+    content: ' +Visitantes';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    /*width: 100%;*/
+    height: 100%;
+    font-size: 250px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #f8f8f8;
+    
+}
+.visitorcounter-cta-inner {
+    position: relative;
+    z-index: 1;
+}
+.visitorcounter-cta-title {
+    margin-bottom: 12px;
+   
+}
+.visitorcounter-cta-title{
+    color: var(--nv-primary-accent);
+}
+
+/* Oculta el crédito predeterminado de Neve y conserva el copyright propio del banco. */
+#site-footer .builder-item.cr {
+    display: none;
+}
+
+.col_simulador,
+.col_simulador_interes {
+    margin: 1.5rem 0;
+    padding: 0;
+    display: block;
+}
+
+.col_1 {
+    width: 100%;
+    margin: 2px;
+}
+
+.col_2 {
+    width: 50%;
+    margin: 2px;
+}
+
+.col_21 {
+    width: 62%;
+    margin: 2px;
+}
+
+.col_3 {
+    width: 30%;
+    margin: 2px;
+}
+
+.column_inner {
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+.column_inner_result {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #e0e5e0;
+    border-radius: 8px;
+    background-color: #f3f5fa;
+}
+
+.column_inner_result label {
+    width: 100%;
+    color: var(--nv-text-color, #3a3a3a);
+}
+
+.container_interes {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #e0e5e0;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(23, 102, 24, 0.08);
+}
+
+.ctaform_interes {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.fselect {
+    width: 100%;
+}
+
+/* Componentes visuales compartidos por los simuladores y las tablas de tasas. */
+.banco-simulador {
+    --banco-green: var(--nv-secondary-accent, #176618);
+    --banco-lime: var(--nv-primary-accent, #98db11);
+    --banco-border: #dfe6df;
+    width: 100%;
+    margin: 1.5rem auto;
+    padding: clamp(1rem, 3vw, 2rem);
+    color: var(--nv-text-color, #3a3a3a);
+    background: #fff;
+    border: 1px solid var(--banco-border);
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(23, 102, 24, 0.08);
+}
+
+.banco-simulador h2 {
+    margin: 0 0 0.5rem;
+    color: var(--banco-green);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+
+.banco-simulador-intro,
+.banco-simulador-help,
+.banco-simulador-note,
+.banco-simulador-disclaimer {
+    margin: 0.25rem 0 1rem;
+    color: #59645b;
+}
+
+.banco-simulador input,
+.banco-simulador select {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+.banco-simulador button {
+    min-height: 44px;
+    padding: 0.65rem 1.1rem;
+    color: #fff;
+    font-weight: 700;
+    background: var(--banco-green);
+    border: 1px solid var(--banco-green);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.banco-simulador button:hover,
+.banco-simulador button:focus-visible {
+    background: #104d14;
+    border-color: #104d14;
+}
+
+.banco-simulador button:focus-visible,
+.banco-simulador input:focus-visible,
+.banco-simulador select:focus-visible {
+    outline: 3px solid rgba(152, 219, 17, 0.55);
+    outline-offset: 2px;
+}
+
+.banco-simulador-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 1.25rem;
+    align-items: stretch;
+}
+
+.banco-simulador-panel,
+.banco-simulador-results {
+    padding: 1.25rem;
+    background: #f7f9f7;
+    border: 1px solid var(--banco-border);
+    border-radius: 10px;
+}
+
+.banco-simulador-panel label,
+.banco-simulador-field label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #354537;
+    font-weight: 700;
+}
+
+.banco-simulador-control {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.65rem;
+}
+
+.banco-simulador-help {
+    margin: 0.65rem 0 0;
+    font-size: 0.9rem;
+}
+
+.banco-simulador-status {
+    min-height: 1.4em;
+    margin: 0.5rem 0 0;
+    color: #8a2d20;
+    font-size: 0.95rem;
+}
+
+.banco-simulador-results {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+    align-content: center;
+}
+
+.banco-simulador-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.45rem;
+    min-height: 105px;
+    padding: 1rem;
+    color: #354537;
+    background: #fff;
+    border: 1px solid var(--banco-border);
+    border-radius: 8px;
+}
+
+.banco-simulador-result span:first-child {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.banco-simulador-result output {
+    color: var(--banco-green);
+    font-size: clamp(1.2rem, 2vw, 1.65rem);
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.banco-simulador-result-primary {
+    background: #eef6e8;
+    border-color: #cfe4b8;
+}
+
+.banco-simulador-disclaimer,
+.banco-simulador-note {
+    margin: 1.25rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--banco-border);
+    font-size: 0.9rem;
+}
+
+/* Navegación de pestañas consistente y accesible en desktop y móvil. */
+.banco-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--banco-border);
+}
+
+.banco-simulador .banco-tab-button {
+    color: var(--banco-green);
+    background: #f3f7f1;
+    border-color: var(--banco-border);
+}
+
+.banco-simulador .banco-tab-button.is-active {
+    color: #fff;
+    background: var(--banco-green);
+    border-color: var(--banco-green);
+}
+
+.banco-tab-panel[hidden] {
+    display: none !important;
+}
+
+.banco-conversion-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 1rem;
+    align-items: end;
+    padding: 1.25rem;
+    background: #f7f9f7;
+    border: 1px solid var(--banco-border);
+    border-radius: 10px;
+}
+
+.banco-simulador-field output {
+    display: flex;
+    min-height: 45px;
+    align-items: center;
+    padding: 0 0.75rem;
+    color: var(--banco-green);
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: #fff;
+    border: 1px solid var(--banco-border);
+    border-radius: 5px;
+}
+
+.banco-conversion-equals {
+    padding-bottom: 0.65rem;
+    color: var(--banco-green);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.banco-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--banco-border);
+    border-radius: 10px;
+}
+
+.banco-rates-table {
+    min-width: 540px;
+    margin: 0;
+    border: 0;
+}
+
+.banco-rates-table caption {
+    padding: 1rem;
+    color: var(--banco-green);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: left;
+    background: #f7f9f7;
+}
+
+.banco-rates-table th,
+.banco-rates-table td {
+    padding: 0.8rem 1rem;
+    border: 0;
+    border-bottom: 1px solid #e8ede8;
+    text-align: left;
+}
+
+.banco-rates-table th {
+    color: #fff;
+    background: var(--banco-green);
+}
+
+.banco-rates-table tbody tr:nth-child(even) {
+    background: #f7f9f7;
+}
+
+.banco-rates-table tbody tr:hover {
+    background: #eef6e8;
+}
+
+/* Formulario de actualización de tasas separado visualmente del resto del contenido. */
+.banco-upload-form {
+    display: grid;
+    gap: 0.75rem;
+    max-width: 620px;
+    padding: 1.25rem;
+    background: #f7f9f7;
+    border: 1px solid var(--banco-border);
+    border-radius: 10px;
+}
+
+.banco-upload-form label {
+    font-weight: 700;
+}
+
+.banco-upload-form input[type="file"] {
+    min-height: 44px;
+    padding: 0.35rem;
+    color: #354537;
+    background: #fff;
+    border: 1px solid var(--banco-border);
+    border-radius: 7px;
+}
+
+.banco-upload-form input[type="file"]::file-selector-button {
+    min-height: 34px;
+    margin-right: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    color: #fff;
+    font-weight: 700;
+    background: var(--banco-green);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banco-upload-form input[type="file"]::file-selector-button:hover {
+    background: #104d14;
+}
+
+.banco-upload-form input[type="file"]::-webkit-file-upload-button {
+    min-height: 34px;
+    margin-right: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    color: #fff;
+    font-weight: 700;
+    background: var(--banco-green);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banco-upload-notice {
+    margin: 1rem 0;
+    padding: 0.85rem 1rem;
+    border-radius: 7px;
+}
+
+.banco-upload-notice-success {
+    color: #155724;
+    background: #eaf6e8;
+    border: 1px solid #b8dcb1;
+}
+
+.banco-upload-notice-error {
+    color: #842029;
+    background: #fceced;
+    border: 1px solid #f1c2c5;
+}
+
+.banco-simulador-interes #form1,
+.banco-simulador-interes #form2,
+.banco-simulador-interes #form3,
+.banco-simulador-interes #form4 {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 1rem;
+    background: #f7f9f7;
+    border: 1px solid var(--banco-border);
+    border-radius: 10px;
+}
+
+.banco-simulador-interes #form1 label,
+.banco-simulador-interes #form2 label,
+.banco-simulador-interes #form3 label,
+.banco-simulador-interes #form4 label {
+    display: block;
+    margin: 0.85rem 0 0.35rem;
+    color: #354537;
+    font-weight: 700;
+}
+
+.banco-simulador-interes #time_in,
+.banco-simulador-interes #time_out,
+.banco-simulador-interes #time_in_f,
+.banco-simulador-interes #time_out_f {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.4rem;
+}
+
+.banco-simulador-interes #form1 button,
+.banco-simulador-interes #form2 button,
+.banco-simulador-interes #form3 button,
+.banco-simulador-interes #form4 button {
+    margin: 1rem 0 0.5rem;
+}
+
+.banco-simulador-interes #form1 input[readonly],
+.banco-simulador-interes #form2 input[readonly],
+.banco-simulador-interes #form3 input[readonly],
+.banco-simulador-interes #form4 input[readonly] {
+    color: var(--banco-green);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Presenta el carrusel de inicio como una capa ligera sobre la imagen de portada. */
+.home .wp-block-cb-carousel-v2 {
+    position: relative;
+    width: min(1120px, calc(100% - 40px)) !important;
+    max-width: none !important;
+    margin: -110px auto 0 !important;
+    z-index: 2;
+}
+
+.home .wp-block-cb-carousel-v2 .swiper {
+    overflow: hidden;
+    padding: 0 12px 12px;
+}
+
+.home .wp-block-cb-carousel-v2 .cb-slide {
+    padding: 0 12px;
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-cover {
+    box-sizing: border-box;
+    min-height: 292px !important;
+    height: 292px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e5ebe5 !important;
+    border-radius: 12px;
+    box-shadow: 0 10px 28px rgba(23, 70, 35, 0.12);
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-cover::before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    background: #176618;
+    content: "";
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-cover__background {
+    background-color: #fff !important;
+    opacity: 1 !important;
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-cover__inner-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: none;
+    padding: 1.5rem 1.75rem;
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-column,
+.home .wp-block-cb-carousel-v2 .wp-block-themeisle-blocks-advanced-heading,
+.home .wp-block-cb-carousel-v2 .wp-block-buttons.align-center {
+    text-align: left !important;
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-column {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-themeisle-blocks-font-awesome-icons {
+    color: #176618 !important;
+}
+
+.home .wp-block-cb-carousel-v2 h1 {
+    margin: 0 0 0.6rem;
+    color: #26352a !important;
+    font-size: clamp(1.5rem, 2.6vw, 2rem);
+    line-height: 1.2;
+}
+
+.home .wp-block-cb-carousel-v2 h6 {
+    margin: 0;
+    color: #59645b !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-buttons.align-center {
+    justify-content: flex-start !important;
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-themeisle-blocks-button {
+    flex: 0 0 auto;
+    width: fit-content;
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-button__link {
+    display: inline-flex;
+    width: auto;
+    min-height: 44px;
+    padding: 0.7rem 1.15rem;
+    color: #fff !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background: #176618 !important;
+    border: 1px solid #176618;
+    border-radius: 6px;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-button__link:hover,
+.home .wp-block-cb-carousel-v2 .wp-block-button__link:focus-visible {
+    background: #104d14 !important;
+    border-color: #104d14;
+}
+
+.home .wp-block-cb-carousel-v2 .wp-block-themeisle-blocks-button-group .wp-block-themeisle-blocks-button .wp-block-button__link {
+    padding: 0.7rem 1.15rem !important;
+    border-radius: 6px !important;
+}
+
+.home .wp-block-cb-carousel-v2 .cb-button-prev,
+.home .wp-block-cb-carousel-v2 .cb-button-next {
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    color: #176618;
+    background: #fff;
+    border: 1px solid #e5ebe5;
+    border-radius: 50%;
+    box-shadow: 0 3px 12px rgba(23, 70, 35, 0.12);
+}
+
+.home .wp-block-cb-carousel-v2 .cb-button-prev {
+    left: 4px;
+}
+
+.home .wp-block-cb-carousel-v2 .cb-button-next {
+    right: 4px;
+}
+
+.home .wp-block-cb-carousel-v2 .cb-button-prev::after,
+.home .wp-block-cb-carousel-v2 .cb-button-next::after {
+    font-size: 16px;
+    color: #176618;
+}
+
+@media (min-width: 768px) {
+    .container_interes {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .ctaform_interes {
+        flex: 0 0 30%;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .home .wp-block-cb-carousel-v2 {
+        margin-top: -72px !important;
+    }
+
+    .home .wp-block-cb-carousel-v2 .cb-slide {
+        padding: 0 8px;
+    }
+
+    .home .wp-block-cb-carousel-v2 .swiper {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .home .wp-block-cb-carousel-v2 .wp-block-cover {
+        min-height: 248px !important;
+        height: 248px;
+    }
+
+    .home .wp-block-cb-carousel-v2 .wp-block-cover__inner-container {
+        padding: 1.25rem 1.4rem;
+    }
+
+    .home .wp-block-cb-carousel-v2 .cb-button-prev {
+        left: 0;
+    }
+
+    .home .wp-block-cb-carousel-v2 .cb-button-next {
+        right: 0;
+    }
+
+    .banco-simulador-grid,
+    .banco-simulador-results {
+        grid-template-columns: 1fr;
+    }
+
+    .banco-conversion-row {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .banco-conversion-equals {
+        padding: 0;
+        text-align: center;
+    }
+
+    .banco-tabs {
+        flex-direction: column;
+    }
+
+    .banco-tabs button {
+        width: 100%;
+    }
+}
+
+/* Noticias de la portada: composición editorial y ligera, editable desde Gutenberg. */
+.home #wp-block-themeisle-blocks-advanced-columns-b413d8dc {
+    padding: clamp(2.5rem, 6vw, 5rem) 20px !important;
+    background: #f6f8f6;
+}
+
+.home #wp-block-themeisle-blocks-advanced-columns-b413d8dc > .innerblocks-wrap {
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    align-items: stretch;
+}
+
+.home #wp-block-themeisle-blocks-advanced-column-28c3d287 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: clamp(1.5rem, 4vw, 3rem) !important;
+    background: #fff;
+    border: 1px solid #e8ede8;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 28px rgba(29, 55, 34, 0.045);
+}
+
+.home #wp-block-themeisle-blocks-advanced-column-28c3d287 > h2 {
+    margin: 0 0 1.5rem;
+    color: #26352a;
+    font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-featured-post {
+    margin: 0 0 0.75rem;
+    padding: 1.25rem 1.4rem;
+    background: #f5f8f4;
+    border: 1px solid #e8ede8;
+    border-radius: 12px;
+}
+
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-posts-grid-post-body {
+    display: block !important;
+    width: 100%;
+}
+
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-posts-grid-post-category {
+    display: inline-block !important;
+    width: auto !important;
+    margin: 0 0 0.4rem;
+    color: #176618;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    line-height: 1.4 !important;
+    text-transform: uppercase;
+}
+
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-posts-grid-post-title {
+    margin: 0;
+    color: #26352a;
+    font-size: clamp(0.95rem, 1.2vw, 1rem);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-featured-post .o-posts-grid-post-title {
+    font-size: clamp(1rem, 1.45vw, 1.15rem);
+}
+
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-posts-grid-post-title a {
+    color: inherit;
+    text-decoration: none;
+    text-underline-offset: 0.18em;
+}
+
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-posts-grid-post-title a:hover,
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-posts-grid-post-title a:focus-visible {
+    color: #176618;
+    text-decoration: underline;
+}
+
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-posts-grid-post-meta {
+    margin: 0.55rem 0 0;
+    color: #707a72;
+    font-size: 0.75rem;
+    line-height: 1.4 !important;
+}
+
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .is-list {
+    display: block;
+}
+
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-posts-grid-post-blog {
+    display: block !important;
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e8ede8;
+}
+
+.home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-posts-grid-post-blog:last-child {
+    border-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .home #wp-block-themeisle-blocks-advanced-columns-b413d8dc {
+        padding: 2.5rem 16px !important;
+    }
+
+    .home #wp-block-themeisle-blocks-advanced-column-28c3d287 {
+        padding: 1.5rem !important;
+    }
+
+    .home #wp-block-themeisle-blocks-advanced-column-28c3d287 > h2 {
+        margin-bottom: 1.25rem;
+    }
+
+    .home #wp-block-themeisle-blocks-posts-grid-56a6e2cb .o-featured-post {
+        padding: 1rem;
+    }
+}

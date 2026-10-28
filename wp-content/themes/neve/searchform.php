@@ -1,0 +1,67 @@
+<?php
+/**
+ * Search form
+ *
+ * @package Neve.
+ */
+
+$form_classes = [ 'search-form' ];
+
+$placeholder = array_key_exists( 'placeholder', $args ) ? $args['placeholder'] : __( 'Search for...', 'neve' );
+
+if ( array_key_exists( 'additional_form_classes', $args ) && is_array( $args['additional_form_classes'] ) ) {
+	$form_classes = array_merge( $form_classes, $args['additional_form_classes'] );
+}
+
+$value = array_key_exists( 'value', $args ) ? $args['value'] : '';
+
+$placeholder = apply_filters( 'nv_search_placeholder', $placeholder );
+$aria_label  = __( 'Search', 'neve' );
+$home_url    = home_url( '/' );
+if ( function_exists( 'PLL' ) ) {
+	$pll_data = PLL();
+	if ( property_exists( $pll_data, 'links' ) && method_exists( $pll_data->links, 'get_home_url' ) ) {
+		$home_url = $pll_data->links->get_home_url( null, true );
+	}
+}
+
+$has_text_button = isset( $args['button_text'] );
+$context         = array_key_exists( 'context', $args ) ? $args['context'] : false;
+
+// The label is always associated with the input; contexts that need a
+// visible, persistent label (404 / no-results pages) pass visible_label.
+$visible_label = ! empty( $args['visible_label'] );
+$input_id      = wp_unique_id( 'nv-search-input-' );
+if ( $visible_label ) {
+	$form_classes[] = 'nv-search-labeled';
+}
+?>
+
+<form role="search"
+	method="get"
+	class="<?php echo esc_attr( implode( ' ', $form_classes ) ); ?>"
+	action="<?php echo esc_url( $home_url ); ?>">
+	<label for="<?php echo esc_attr( $input_id ); ?>"<?php echo $visible_label ? '' : ' class="screen-reader-text"'; ?>><?php echo esc_html__( 'Search for...', 'neve' ); ?></label>
+	<input type="search"
+		id="<?php echo esc_attr( $input_id ); ?>"
+		class="search-field"
+		placeholder="<?php echo esc_attr( $placeholder ); ?>"
+		value="<?php echo esc_attr( $value ); ?>"
+		name="s"/>
+	<button type="submit"
+			class="search-submit<?php echo $has_text_button ? ' nv-text-btn' : ''; ?>"
+			aria-label="<?php echo esc_attr( $aria_label ); ?>">
+		<?php if ( $has_text_button ) { ?>
+			<?php echo esc_html( $args['button_text'] ); ?>
+		<?php } else { ?>
+			<span class="nv-search-icon-wrap">
+				<?php neve_search_icon( false, true, 15, false, $context ); ?>
+			</span>
+		<?php } ?>
+	</button>
+	<?php
+	if ( array_key_exists( 'post_type', $args ) ) {
+		echo '<input type="hidden" name="post_type" value="' . esc_attr( $args['post_type'] ) . '"/>';
+	}
+	?>
+</form>

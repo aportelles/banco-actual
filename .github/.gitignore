@@ -1,0 +1,21 @@
+# Ignorar archivos del núcleo de WordPress y configuraciones del servidor
+wp-admin/
+wp-includes/
+wp-content/plugins/
+wp-content/upgrade/
+wp-content/uploads/
+wp-*.php
+*.php
+.htaccess
+*.html
+*.txt
+*.xml
+
+# Ignorar todos los temas excepto el tuyo personalizado
+wp-content/themes/*
+!wp-content/themes/neve-child/
+
+# Permitir explícitamente tus carpetas de control y notas
+!.github/
+!CHANGELOG.md
+
