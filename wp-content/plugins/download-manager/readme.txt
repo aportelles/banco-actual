@@ -5,7 +5,7 @@ Tags: download manager, document management, file manager, digital store, ecomme
 Requires at least: 5.3
 Tested up to: 7.1
 License: GPLv3
-Stable tag: 3.3.73
+Stable tag: 3.3.75
 
 This File Management & Digital Store plugin will help you to control file downloads & sell digital products from your WP site.
 
@@ -201,6 +201,23 @@ By using this plugin, you acknowledge and agree to the terms and policies of the
 19. More features
 
 == Changelog ==
+
+= 3.3.75 - 2026.11.01 =
+* Security: A refused registration could rewrite the first administrator's name; author names are now escaped in the Spotlight template ( Reported via Wordfence )
+* Security: REST package search returned packages the visitor can't access; the /wp/v2/wpdmpro route now follows "Hide all package info" ( Reported by Venkateswara Reddy )
+* Security: A Contributor could embed and download any Asset Manager file with [wpdm_asset]; links now need the post's author or the viewer to have access ( Reported by 0xRrudy )
+* Fixed: Pages listing many packages were slow on large sites; per-user download counts are now indexed and duplicate asset link indexes removed
+* Fixed: The cache cleanup cron URL stopped working; one cron URL in Cron Jobs settings now runs every scheduled task
+* Improved: Recent Jobs list with icon actions, job names, last errors and site-timezone times
+
+= 3.3.74 - 2026.10.26 =
+* Security: Private packages were downloadable by any logged-in user; unpublished packages now require permission to read the package ( Reported by wellknown.info )
+* Security: The showLockOptions AJAX action no longer returns download links for packages the user can't access
+* New: Dedicated MCP server at /wp-json/wpdm/mcp lists enabled AI abilities as first-class tools ( needs the MCP Adapter plugin )
+* New: MCP resources for the category tree and site download settings, and prompts for publishing a release and writing an activity report
+* New: AI abilities to restore trashed packages, edit and delete categories, list tags, edit attached file details, read download history and regenerate master keys
+* Fixed: Package stock limit was never enforced on downloads
+* Improved: AI abilities - atomic rate limits, downloads sort keeps new packages, DST-safe daily stats, audit log paging and user filter, application password warning
 
 = 3.3.73 - 2026.10.07 =
 * New: AI Abilities let Claude, Cursor and other MCP clients manage packages, files, download links, categories and stats (WordPress 6.9+, off until enabled in Settings → AI Abilities)
